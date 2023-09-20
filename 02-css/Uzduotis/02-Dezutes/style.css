@@ -1,0 +1,105 @@
+body {
+    background-color: paleturquoise;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background-color: rgb(196, 159, 111);
+    max-width: 80%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pirmas {
+    border: 12px solid red;
+    box-shadow: 5px 5px 15px black;
+}
+
+#antras {
+    padding: 5em;
+    border-radius: 150px;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0, 0.5);
+}
+#trecias {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 0em;
+    padding-right: 0em;
+    border-bottom: 10px solid red;
+    border-right: 15px dashed red;
+}
+
+#ketvirtas {
+    padding-top: 0em;
+    padding-bottom: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+}
+
+#penktas {
+    padding-bottom: 5em;
+    padding-top: 0em;
+    padding-left: 0em;
+    padding-right: 0em;
+    border-left: 10px dashed red;
+}
+
+#sestas li {
+    display: inline;
+}
+form {
+    background-color: rgb(196, 159, 111);
+    max-width: 500px;
+    padding: 1em;
+}
+
+input {
+    display: block;
+}
+
+#devyni p {
+    font-size: 2em;
+}
+
+#devyni ul li a {
+    font-size: 2em;
+}
+
+#devyni p mark:hover {
+    position: relative;
+    bottom: 10px;
+}
+
+#devyni ul li a:hover{
+    position: relative;
+    left: 20px;
+}
+
+#virsus-blokas {
+    background-color: red;
+    padding: 1em;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    margin: 0;
+}
+
+#virsus-blokas a {
+    color: white;
+    text-decoration: none;
+}
+
+
+header {
+    background-image: url(Rusell.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}

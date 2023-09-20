@@ -40,8 +40,19 @@ ol li {
     list-style-type:lower-alpha;
 }
 
+.sarasas li {
+    text-decoration: underline;
+}
 
+a {
+    color: orange;
+    text-decoration: none;
+    font-size: 18px;
+}
 
-
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
 
 

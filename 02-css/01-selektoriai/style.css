@@ -7,9 +7,41 @@ h1, h2, h3 {
 }
 p {
     font-family: cursive;
+    font-size: 14px;
 }
 
 h1 {
     text-transform: uppercase;
 }
  
+.spalva-raudona {
+    background-color: red;
+}
+
+.spalva-oranzine {
+    background-color: orange;
+}
+
+.didelis {
+    font-size: 24px;
+}
+
+.mazas {
+    font-size: 12px;
+}
+
+/* Tevas vaikas */
+
+li {
+    font-style: italic;
+}
+
+ol li {
+    list-style-type:lower-alpha;
+}
+
+
+
+
+
+

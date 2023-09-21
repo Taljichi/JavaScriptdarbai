@@ -85,6 +85,7 @@ input {
     background-color: red;
     padding: 1em;
     position: fixed;
+    z-index: 100;
     bottom: 2em;
     right: 2em;
     margin: 0;
@@ -100,6 +101,31 @@ header {
     background-image: url(Rusell.jpg);
     background-size: cover;
     width: 100%;
+    z-index: 80;
     height: 100vh;
     position: relative;
+}
+
+#info h1 {
+    margin: 0px;
+    display: inline-block;
+    background-color: blueviolet;
+    color: blanchedalmond;
+    font-size: 7em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#info p {
+    background-color: aqua;
+    color: brown;
+    font-size: 1.5em;
+    max-width: 50%;
+}
+
+header #info {
+    position: absolute;
+    background: none;
+    padding-left: 500px;
+    padding-top: 500px;
 }

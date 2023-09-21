@@ -1,0 +1,67 @@
+body {
+    background-color: bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+
+#placiau {
+    background-color: bisque;
+    width: 100px;
+    padding: 0.9em;
+    position: relative;
+    margin-left: 240px;
+    text-align: center;
+}
+a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    bottom: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+    bottom: 5px;
+}
+
+
+#Pirmas {
+    background-color: white;
+    width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+}
+
+#Antras {
+    background-color: white;
+    width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+}
+
+#Trecias {
+    background-color: white;
+    width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+}
+
+#Ketvirtas {
+    background-color: white;
+    width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+}
+
+#Penktas {
+    background-color: white;
+    width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+}

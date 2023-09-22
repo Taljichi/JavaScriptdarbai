@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position absolute</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        #pirmas {
+            background-color: bisque;
+            padding: 50px;
+        }
+        #pirmas .preke {
+            width: 200px;
+            background: white;
+            margin: 0 auto;
+    
+            position: relative;
+        }
+        #pirmas .preke img {
+            width: 100%;
+        }
+        #pirmas .preke .nuolaida {
+            background-color: red;
+            color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        #antras {
+            background-color: lightblue;
+            height: 300px;
+            position: relative;
+        }
+#antras .tekstas {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+}
+
+     #pirmas .preke p{
+        text-indent: 10px;
+        } 
+    </style>
+</head>
+<body>
+    
+    <div id="pirmas">
+        <div class="preke">
+            <img src="https://via.placeholder.com/200x100" alt="">
+            <h3>Kompiuteris Dell</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam natus, perspiciatis autem consectetur delectus impedit.</p>
+            <a href="#">Pirkti</a>
+            <div class="nuolaida">-50 %</div>
+        </div>
+    </div>
+<div id="antras">  
+    <div class="tekstas"></div>
+    <h2>Antraste</h2>
+    <p>Koks nors</p>
+</div>
+  
+
+</body>
+</html>

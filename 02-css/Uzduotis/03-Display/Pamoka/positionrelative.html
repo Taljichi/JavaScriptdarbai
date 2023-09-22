@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position relative</title>
+    <style>
+        #pirmas {
+            background-color: aquamarine ;
+            padding: 50px;
+            display: flex;
+            gap: 20px;
+        }
+        #pirmas .blokelis {
+            background: white;
+            position: relative;
+        }
+
+        #pirmas .antras {
+            top: 15px;
+        }
+        #pirmas .trecias {
+            top: 30px;
+        }
+        #antras {
+            padding: 50px;
+            background-color: bisque;
+        }
+        #antras .blokelis {
+            background: white;
+            margin: 20px auto;
+            width: 200px;
+        }
+        #antras .nr1{
+            position: relative;
+left: 15px;
+        }
+        #antras .nr2{
+            position: relative;
+            right: 15px;
+        } 
+        #antras .nr3{
+            position: relative;
+            left: 15px;
+        }
+        #trecias {
+            padding: 100px;
+            background-color: mediumseagreen;
+            text-align: center;
+        }
+
+        #trecias a {
+            display: inline-block;
+            background: white;
+            color: black;
+            text-decoration: none;
+            padding: 12px 40px;
+            border-radius: 20px;
+            position: relative;
+            bottom: 0;
+            transition: 0.2s all;
+        }
+        #trecias a:hover {
+            background-color: bisque;
+            font-weight: bold; 
+            bottom: 5px;
+        }
+        #ketvirtas {
+            background-color: lightblue;
+            padding: 100px 30px;
+        }
+
+        #ketvirtas .straipsnis {
+            background: white;
+            margin: 20px;
+            position: relative;
+            transition: 0.2s all;
+            left: 0;
+        }
+        #ketvirtas .straipsnis:hover {
+            left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="pirmas">
+        <div class="blokelis pirmas">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ea vero nemo repellat ad porro fuga odio quod perspiciatis minima? Quod nulla est laboriosam expedita obcaecati odit odio consequatur sit!
+        </div>
+        <div class="blokelis antras">
+            Laborum assumenda dolore non aliquid omnis odit eaque necessitatibus minus magni quae hic, deleniti quisquam cumque aspernatur esse cupiditate minima amet sequi vel quos exercitationem ipsa. Voluptatem error odio animi?
+        </div>
+        <div class="blokelis trecias">
+            Quae officia dignissimos amet reiciendis minima, dolorem necessitatibus quo perferendis magnam nesciunt, consequuntur rerum voluptatem illum optio? Eaque reiciendis distinctio, repudiandae aspernatur tempora at repellat id rem animi voluptatem laudantium.
+        </div>
+    </div>
+
+    <div id="antras">
+        <div class="blokelis nr1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, architecto sed! Repellat quas facilis aliquid.
+        </div>
+        <div class="blokelis nr2">
+            Corporis, earum eligendi. Beatae perferendis, repudiandae laboriosam pariatur enim eius? Aliquam at saepe nam suscipit.
+        </div>
+        <div class="blokelis nr3">
+            Cupiditate quod reiciendis nisi, maiores, hic itaque officiis culpa aspernatur blanditiis voluptas eveniet amet perspiciatis!
+        </div>
+    </div>
+    <div id="trecias">
+        <h3>Kainos...</h3>
+        <p>300 $</p>
+        <a href="#">Pirkti</a>
+    </div>
+
+    <div id="ketvirtas"><div class="straipsnis nr1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tenetur neque doloremque aspernatur nemo ut.
+    </div>
+    <div class="straipsnis nr2">
+        Ullam earum est repellat iste provident, facilis deserunt. Accusamus rerum nisi eius dolorem totam in?
+    </div></div>
+    
+</body>
+</html>

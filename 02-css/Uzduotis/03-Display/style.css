@@ -11,12 +11,14 @@ p {
 }
 
 #placiau {
+    display: inline-block;
     background-color: bisque;
-    width: 100px;
-    padding: 0.9em;
+    padding: 12px 40px;
     position: relative;
     margin-left: 240px;
     text-align: center;
+    bottom: 0;
+    transition: 0.2s all;
 }
 a {
     color: black;

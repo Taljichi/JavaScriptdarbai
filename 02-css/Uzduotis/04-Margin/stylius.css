@@ -1,0 +1,52 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-image: url(Rusell.jpg);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+#Nuorodos {
+    padding: 1em;
+    text-align: center;
+    ;
+}
+#Nuorodos ul li{
+display: inline-block;
+margin-right: 10px;
+}
+
+#Nuorodos ul li a {
+    text-decoration: none;
+    color: lightblue;
+}
+#blokelis {
+    position: absolute;
+    bottom: 300px;
+    left: 300px;
+    background: black;
+}
+
+#blokelis h1 {
+    text-align: Center;
+    margin-top: 0;
+}
+#blokelis p {
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+div p {
+    text-align: center;
+}

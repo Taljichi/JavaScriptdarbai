@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#blokelis {
+    background-color: rgb(255, 255, 255);
+    padding:40px;
+}
+#blokelis .image {
+    width: 300px;
+    background: bisque;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 5px 5px 15px black;
+    padding-bottom: 5px;
+}
+#blokelis .image h3 {
+    padding: 5px;
+    text-align: center;
+}
+#blokelis .image p {
+    padding: 5px;
+    text-align: center;
+}
+
+#blokelis .image img {
+    width: 100%;
+}
+#blokelis .image #textas {
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 280px;
+    left: 0;
+    padding: 5px;
+}
+
+#blokelis .image p{
+text-indent: 10px;
+} 

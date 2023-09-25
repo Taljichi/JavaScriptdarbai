@@ -1,0 +1,89 @@
+/* =======================
+BENDRI STILIAI
+========================*/
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#pradzia {
+    height: 100vh;
+    background-image: url('Rusell.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#pradzia .tekstas {
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+}
+
+#pradzia .tekstas h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#pradzia .tekstas p {
+    margin-top: 0;
+}
+/* #pradzia .tekstas h1 {
+    margin-top: 0;
+} */
+
+/* #pradzia .tekstas h1,
+#pradzia .tekstas p {
+    margin: 0;
+} */
+
+/* #pradzia .tekstas > * {
+    margin: 0;
+} */
+
+#antras {
+    height: 300px;
+    background: orange;
+    position: relative;
+}
+
+#antras .skraidantis1{
+position: absolute;
+bottom: 20px;
+left: 50px;
+background: darkgreen;
+}
+#antras .skraidantis2 {
+position: absolute;
+top: 20px;
+right: 50px;
+background: darkgreen;
+}
+/* ============================
+ Navigacija !!!!!!!!!!!!!!!!
+=============================*/
+#navigacija {
+    text-align: center;
+}
+
+#navigacija a {
+    color: white;
+    text-decoration: none;
+}
+
+#navigacija ul li{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+#navigacija ul li a {
+    text-decoration: none;
+    color: white;
+}

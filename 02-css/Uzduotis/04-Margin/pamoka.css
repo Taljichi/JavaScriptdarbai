@@ -18,6 +18,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    z-index: 80;
 }
 
 #pradzia .tekstas {
@@ -71,11 +72,25 @@ background: darkgreen;
 =============================*/
 #navigacija {
     text-align: center;
+    display: flex;
+    background: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
 #navigacija a {
     color: white;
     text-decoration: none;
+}
+
+#navigacija a:hover {
+    color: orange;
 }
 
 #navigacija ul li{
@@ -86,4 +101,60 @@ background: darkgreen;
 #navigacija ul li a {
     text-decoration: none;
     color: white;
+    padding: 5px 10px;
+    display: inline-block;
+}
+/* =======================
+SAUSAINIŲ JUOSTOS STILIAI
+======================= */
+#sausainiai {
+    background: white;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 90;
+    color: black;
+    padding: 10px 20px;
+}
+
+#sausainiai p {
+    margin: 0;
+}
+
+#sausainiai {
+    background: white;
+    border: 1px solid #222;
+    cursor: pointer;
+}
+
+/* 
+=============================
+NAVIGACIJA APACIOJE!!!!!!!!!!!!!
+=============================
+*/
+
+#nav2 {
+    background: darksalmon;
+    text-align: center;
+    color: black;
+
+}
+
+#nav2 p,
+#nav2 .nuorodos {
+    margin: 0;
+}
+
+#nav2 .nuorodos {
+    padding: 0;
+}
+
+#nav2 .nuorodos li {
+    display: inline-block;
+    margin: 0 20px;
+    list-style-type: none;
+}
+#nav2 .nuorodos li a {
+    text-decoration: none;
+    color: black;
 }

@@ -2,7 +2,6 @@ html, body {
     margin: 0;
     padding: 0;
 }
-
 body {
     display: inline-flex;
     padding: 90px 115px 137px 136px;
@@ -12,8 +11,7 @@ body {
     background: #E2E1E1;
     font-family: 'Inter', sans-serif;
 }
-
-#kortele1 {
+#kortele {
     display: flex;
     width: 276px;
     height: 345px;
@@ -25,16 +23,14 @@ body {
 /* Elevation/Light/Bottom/02 */
     box-shadow: 0px 2px 4px 0px rgba(96, 97, 112, 0.16), 0px 0px 1px 0px rgba(40, 41, 61, 0.04);
 }
-
-#kortele1 #image2 {
+#image {
     height: 208px;
     width: 276px;
     flex-shrink: 0;
     align-self: stretch;
     position: relative;
 }
-
-#kortele1 #image2 img {
+#image img {
     width: 276px;
     height: 176px;
     flex-shrink: 0;
@@ -42,8 +38,7 @@ body {
     border-top-right-radius: 12px;
     object-fit: cover;
 }
-
-#kortele1 #image2 #data {
+#data {
     width: 56px;
     height: 56px;
     flex-shrink: 0;
@@ -54,7 +49,7 @@ body {
     right: 16px;
     bottom: 4px;
 }
-#kortele1 #image2 #data h1 {
+h1 {
     color: var(--black-700-black, #121212);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -65,7 +60,7 @@ body {
     line-height: 28px; /* 116.667% */
     margin: 0;
 }
-#kortele1 #image2 #data p {
+#data p {
     color: var(--black-700-black, #121212);
 text-align: center;
 font-feature-settings: 'clig' off, 'liga' off;
@@ -77,16 +72,14 @@ line-height: 22px; /* 183.333% */
 letter-spacing: 0.2px;
 margin: 0;
 }
-
-#kortele1 #tekstas {
+#tekstas {
     display: flex;
     padding: 0px 16px;
     flex-direction: column;
     align-items: flex-start;
 
 }
-
-#kortele1 #tekstas h2 {
+h2 {
     color: var(--black-400-gray, #959393);
 font-feature-settings: 'clig' off, 'liga' off;
 font-family: Inter;
@@ -97,8 +90,7 @@ line-height: 22px; /* 157.143% */
 letter-spacing: 0.2px;
 margin: 0;
 }
-
-#koretele1 #tekstas p {
+#tekstas p {
     color: var(--black-700-black, #121212);
     font-feature-settings: 'clig' off, 'liga' off;
     font-size: 20px;
@@ -107,8 +99,7 @@ margin: 0;
     line-height: 22px; /* 120% */
     width: 250px;
 }
-
-#kortele1 #zymekliai {
+#zymekliai {
     display: flex;
     padding: 16px 0px;
     align-items: center;
@@ -119,8 +110,7 @@ margin: 0;
     left: 16px;
     bottom: 0px;
 }
-
-#kortele1 #zymekliai #bookmark {
+#bookmark {
     display: flex;
 width: 16px;
 height: 16px;
@@ -130,276 +120,8 @@ align-items: center;
 border-radius: 200px;
 border: 1px solid #959393;
 }
-
-#kortele1 #zymekliai #share {
-display: flex;
-width: 16px;
-height: 16px;
-padding: 8px;
-justify-content: center;
-align-items: center;
-border-radius: 200px;
-border: 1px solid #959393;
-}
-
-/* 
-ANTRAS BLOKAS!!!!!!!!!!!!!!!!!
-*/
-
-#kortele2 {
+#share {
     display: flex;
-    width: 276px;
-    height: 345px;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 12px;
-    background: var(--white-fill, #FFF);
-    position: relative;
-/* Elevation/Light/Bottom/02 */
-    box-shadow: 0px 2px 4px 0px rgba(96, 97, 112, 0.16), 0px 0px 1px 0px rgba(40, 41, 61, 0.04);
-}
-
-#kortele2 #image1 {
-    height: 208px;
-    width: 276px;
-    flex-shrink: 0;
-    align-self: stretch;
-    position: relative;
-}
-
-#kortele2 #image1 img {
-    width: 276px;
-    height: 176px;
-    flex-shrink: 0;
-    border-top-left-radius:12px;
-    border-top-right-radius: 12px;
-    object-fit: cover;
-}
-
-#kortele2 #image1 #data {
-    width: 56px;
-    height: 56px;
-    flex-shrink: 0;
-    border-radius: 12px;
-    background: var(--white-fill, #FFF);
-    box-shadow: 0px 1px 4px 0px rgba(96, 97, 112, 0.16), 0px 1px 1px 0px rgba(40, 41, 61, 0.04);
-    position: absolute;
-    right: 16px;
-    bottom: 4px;
-}
-#kortele2 #image1 #data h1 {
-    color: var(--black-700-black, #121212);
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px; /* 116.667% */
-    margin: 0;
-}
-#kortele2 #image1 #data p {
-    color: var(--black-700-black, #121212);
-text-align: center;
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Inter;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; /* 183.333% */
-letter-spacing: 0.2px;
-margin: 0;
-}
-
-#kortele2 #tekstas {
-    display: flex;
-    padding: 0px 16px;
-    flex-direction: column;
-    align-items: flex-start;
-
-}
-
-#kortele2 #tekstas h2 {
-    color: var(--black-400-gray, #959393);
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; /* 157.143% */
-letter-spacing: 0.2px;
-margin: 0;
-}
-
-#koretele2 #tekstas p {
-    color: var(--black-700-black, #121212);
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 22px; /* 120% */
-    width: 250px;
-}
-
-#kortele2 #zymekliai {
-    display: flex;
-    padding: 16px 0px;
-    align-items: center;
-    gap: 12px;
-    width: 76px;
-    height: 32px;
-    position: absolute;
-    left: 16px;
-    bottom: 0px;
-}
-
-#kortele2 #zymekliai #bookmark {
-    display: flex;
-width: 16px;
-height: 16px;
-padding: 8px;
-justify-content: center;
-align-items: center;
-border-radius: 200px;
-border: 1px solid #959393;
-}
-
-#kortele2 #zymekliai #share {
-display: flex;
-width: 16px;
-height: 16px;
-padding: 8px;
-justify-content: center;
-align-items: center;
-border-radius: 200px;
-border: 1px solid #959393;
-}
-
-/* 
-TRECIAS BLOKAS !!!!!!!!!!!!!!!!!!!!!!!!!!!
-*/
-
-#kortele3 {
-    display: flex;
-    width: 276px;
-    height: 345px;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 12px;
-    background: var(--white-fill, #FFF);
-    position: relative;
-/* Elevation/Light/Bottom/02 */
-    box-shadow: 0px 2px 4px 0px rgba(96, 97, 112, 0.16), 0px 0px 1px 0px rgba(40, 41, 61, 0.04);
-}
-
-#kortele3 #image2 {
-    height: 208px;
-    width: 276px;
-    flex-shrink: 0;
-    align-self: stretch;
-    position: relative;
-}
-
-#kortele3 #image2 img {
-    width: 276px;
-    height: 176px;
-    flex-shrink: 0;
-    border-top-left-radius:12px;
-    border-top-right-radius: 12px;
-    object-fit: cover;
-    object-position: 0% 27%;
-}
-
-#kortele3 #image2 #data {
-    width: 56px;
-    height: 56px;
-    flex-shrink: 0;
-    border-radius: 12px;
-    background: var(--white-fill, #FFF);
-    box-shadow: 0px 1px 4px 0px rgba(96, 97, 112, 0.16), 0px 1px 1px 0px rgba(40, 41, 61, 0.04);
-    position: absolute;
-    right: 16px;
-    bottom: 4px;
-}
-#kortele3 #image2 #data h1 {
-    color: var(--black-700-black, #121212);
-    text-align: center;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px; /* 116.667% */
-    margin: 0;
-}
-#kortele3 #image2 #data p {
-    color: var(--black-700-black, #121212);
-text-align: center;
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Inter;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; /* 183.333% */
-letter-spacing: 0.2px;
-margin: 0;
-}
-
-#kortele3 #tekstas {
-    display: flex;
-    padding: 0px 16px;
-    flex-direction: column;
-    align-items: flex-start;
-
-}
-
-#kortele3 #tekstas h2 {
-    color: var(--black-400-gray, #959393);
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; /* 157.143% */
-letter-spacing: 0.2px;
-margin: 0;
-}
-
-#koretele3 #tekstas p {
-    color: var(--black-700-black, #121212);
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 22px; /* 120% */
-    width: 250px;
-}
-
-#kortele3 #zymekliai {
-    display: flex;
-    padding: 16px 0px;
-    align-items: center;
-    gap: 12px;
-    width: 76px;
-    height: 32px;
-    position: absolute;
-    left: 16px;
-    bottom: 0px;
-}
-
-#kortele3 #zymekliai #bookmark {
-    display: flex;
-width: 16px;
-height: 16px;
-padding: 8px;
-justify-content: center;
-align-items: center;
-border-radius: 200px;
-border: 1px solid #959393;
-}
-
-#kortele3 #zymekliai #share {
-display: flex;
 width: 16px;
 height: 16px;
 padding: 8px;

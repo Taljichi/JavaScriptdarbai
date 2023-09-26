@@ -1,0 +1,94 @@
+body {
+}
+
+/* 
+font-family: 'Caveat', cursive;
+400, 700
+
+font-family: 'Poppins', sans-serif; 
+400
+*/
+
+#fonas1 .content-wrapper h1 {
+    color: #FDFDFD;
+    font-size: 300px;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    line-height: 300px;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+#fonas1 .content-wrapper h2 {
+    color: #192337;
+    font-size: 64px;
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    line-height: 64px;
+    word-wrap: break-word;
+    margin: 24px 0;
+}
+
+#fonas1 {
+    position: relative;
+    width: 1920px;
+    height: 1239px;
+    background: #9EB2D5;
+    box-sizing: border-box
+}
+
+#fonas1 .content-wrapper p {
+color: #192337;
+font-family: 'Poppins', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 36px */
+margin: 0;
+}
+
+#fonas1 .content-wrapper {
+    width: 675px;
+    margin: 233px 1049px 234px 196px;
+}
+
+#zmogus {
+    width: 582px;
+    height: 869px;
+    flex-shrink: 0;
+    background: contain no-repeat;
+    right: 80px;
+    left: 1258px;
+    bottom: 157px;
+    top: 213px;
+    position: absolute;
+}
+
+#fonas1 #fonas img{
+    width: 757px;
+    height: 1426px;
+    flex-shrink: 0;
+    border-radius: 423px;
+    background: cover no-repeat;
+    position: absolute;
+    box-sizing: border-box;
+    top: 68px;
+    right: 74px;
+    left: 1089px;
+    bottom: -255px;
+}
+
+#fonas1 #planeta img{
+    width: 1331.531px;
+    height: 1614.493px;
+    transform: rotate(23.089deg);
+    flex-shrink: 0;
+    background: contain no-repeat;
+    top: 479px;
+    left: 601px;
+    right: 539px;
+    bottom: 1247px;
+    position: absolute;
+    box-sizing: border-box;
+    border-top: 266px;
+}

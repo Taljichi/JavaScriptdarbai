@@ -1,0 +1,59 @@
+html, body {
+    margin: 0px ;
+    padding: 0px;
+}
+
+#about {
+    width: 796px;
+    height: 1246px;
+    position: relative;
+}
+
+img {
+    width: 796px;
+    height: 373px;
+    object-fit: cover;
+    display: flex;
+    
+}
+
+#para {
+    position: absolute;
+    left: 133px;
+    top: 491px;
+    width: 464px;
+    height: 623px;
+}
+
+#para p {
+    color: #000;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 16.8px */
+letter-spacing: 0.42px;
+margin: 0px;
+}
+
+#aboutme {
+    display: flex;
+    width: 664px;
+    height: 62px;
+padding: 15px 0px 15px 133px;
+align-items: center;
+background: linear-gradient(180deg, #AFBACB 0%, rgba(175, 186, 203, 0.00) 110.33%), #FFF;
+position: sticky;
+
+}
+
+#aboutme p {
+    color: #373636;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 32px */
+letter-spacing: 0.42px;
+margin: 0px;
+}

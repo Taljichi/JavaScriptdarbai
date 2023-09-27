@@ -9,7 +9,7 @@ html {
 }
 
 .kortele {
-    width: 796px;
+    width: 100%;
     height: 473px;
     flex-shrink: 0;
     position: relative;

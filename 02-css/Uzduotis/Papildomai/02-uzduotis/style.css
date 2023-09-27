@@ -1,7 +1,9 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
+
 body {
     display: inline-flex;
     padding: 90px 115px 137px 136px;
@@ -11,6 +13,7 @@ body {
     background: #E2E1E1;
     font-family: 'Inter', sans-serif;
 }
+
 #kortele {
     display: flex;
     width: 276px;
@@ -20,9 +23,10 @@ body {
     border-radius: 12px;
     background: var(--white-fill, #FFF);
     position: relative;
-/* Elevation/Light/Bottom/02 */
+    /* Elevation/Light/Bottom/02 */
     box-shadow: 0px 2px 4px 0px rgba(96, 97, 112, 0.16), 0px 0px 1px 0px rgba(40, 41, 61, 0.04);
 }
+
 #image {
     height: 208px;
     width: 276px;
@@ -30,14 +34,16 @@ body {
     align-self: stretch;
     position: relative;
 }
+
 #image img {
     width: 276px;
     height: 176px;
     flex-shrink: 0;
-    border-top-left-radius:12px;
+    border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     object-fit: cover;
 }
+
 #data {
     width: 56px;
     height: 56px;
@@ -49,6 +55,7 @@ body {
     right: 16px;
     bottom: 4px;
 }
+
 h1 {
     color: var(--black-700-black, #121212);
     text-align: center;
@@ -57,21 +64,25 @@ h1 {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 28px; /* 116.667% */
+    line-height: 28px;
+    /* 116.667% */
     margin: 0;
 }
+
 #data p {
     color: var(--black-700-black, #121212);
-text-align: center;
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Inter;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; /* 183.333% */
-letter-spacing: 0.2px;
-margin: 0;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 183.333% */
+    letter-spacing: 0.2px;
+    margin: 0;
 }
+
 #tekstas {
     display: flex;
     padding: 0px 16px;
@@ -79,28 +90,33 @@ margin: 0;
     align-items: flex-start;
 
 }
+
 h2 {
     color: var(--black-400-gray, #959393);
-font-feature-settings: 'clig' off, 'liga' off;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px; /* 157.143% */
-letter-spacing: 0.2px;
-margin: 0;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+    letter-spacing: 0.2px;
+    margin: 0;
 }
+
 #tekstas p {
     color: var(--black-700-black, #121212);
     font-feature-settings: 'clig' off, 'liga' off;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 22px; /* 120% */
+    line-height: 22px;
+    /* 120% */
     width: 250px;
     margin-top: 4px;
     margin-bottom: 0px;
 }
+
 #zymekliai {
     display: flex;
     padding: 16px 0px;
@@ -112,23 +128,25 @@ margin: 0;
     left: 16px;
     bottom: 0px;
 }
+
 #bookmark {
     display: flex;
-width: 16px;
-height: 16px;
-padding: 8px;
-justify-content: center;
-align-items: center;
-border-radius: 200px;
-border: 1px solid #959393;
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    border: 1px solid #959393;
 }
+
 #share {
     display: flex;
-width: 16px;
-height: 16px;
-padding: 8px;
-justify-content: center;
-align-items: center;
-border-radius: 200px;
-border: 1px solid #959393;
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    border: 1px solid #959393;
 }

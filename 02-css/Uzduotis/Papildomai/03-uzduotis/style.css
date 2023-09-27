@@ -1,0 +1,87 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E2E1E1;
+}
+
+.fonas {
+    width: 796px;
+    height: 355px;
+    position: relative;
+    padding: 16px;
+}
+
+h2 {
+    color: var(--black-400-gray, #959393);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 110% */
+letter-spacing: 0.2px;
+margin: 0px;
+}
+
+h1 {
+    color: var(--black-700-black, #121212);
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Inter;
+font-size: 128px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 128px */
+width: 476px;
+height: 128px;
+flex-shrink: 0;
+margin: 0px;
+}
+
+p {
+    color: #373636;
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 110% */
+letter-spacing: 0.2px;
+margin: 0px;
+}
+
+img {
+    width: 55.052px;
+height: 55.763px;
+flex-shrink: 0;
+fill: #CC4FEB;
+position: absolute;
+right: 149px;
+bottom: 126px;
+}
+
+.pirmas {
+    top: 115px;
+    left: 400px;
+    position: absolute;
+}
+
+.antras {
+    position: absolute;
+    bottom: 133px;
+    right: 160px;
+    width: 476px;
+    height: 128px;
+}
+
+.trecias {
+    position: absolute;
+    left: 280px;
+    bottom: 72px;
+}
+

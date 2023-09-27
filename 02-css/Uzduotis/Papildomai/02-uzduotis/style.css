@@ -98,6 +98,8 @@ margin: 0;
     font-weight: 700;
     line-height: 22px; /* 120% */
     width: 250px;
+    margin-top: 4px;
+    margin-bottom: 0px;
 }
 #zymekliai {
     display: flex;

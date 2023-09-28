@@ -1,0 +1,105 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#eile1 {
+    background: orange;
+    height: 200px;
+    display: flex;
+}
+
+p {
+    margin: 0;
+}
+
+#eile2 {
+    background: green;
+    display: flex;
+    height: 200px;
+}
+
+#eile3 {
+    background: red;
+    display: flex;
+    height: 400px;
+}
+
+#eile4 {
+    background-color: orange;
+    display: flex;
+    height: 250px;
+}
+
+#eile5 {
+    display: flex;
+    background-color: orangered;
+    height: 250px;
+}
+
+#eile6 {
+    display: flex;
+    background: orange;
+    height: 250px;
+}
+
+#eile6 > p {
+    flex: 1;
+}
+
+#eile7 {
+    display: flex;
+    background: orangered;
+    height: 400px;
+}
+
+#eile7 .stulpelis {
+    flex:1;
+}
+
+#eile8 {
+    display: flex;
+    height: 250px;
+    background: orange;
+}
+
+#eile8 .stulpelis {
+    flex:1;
+}
+
+#eile8 .dvigubas {
+    flex:2;
+}
+
+#eile9 {
+    display: flex;
+    height: 250px;
+    background: orangered;
+}
+
+#eile9 p {
+    width: 40%;
+}
+
+#eile10 {
+    display: flex;
+    height: 250px;
+    background: orange;
+}
+
+#eile10 p {
+    flex-basis: 25%;
+    /* width: 25%; */
+}
+
+#eile11 {
+    display: flex;
+    background-color: orangered;
+    flex-wrap: wrap ;
+}
+
+#eile11 p {
+    width: 33%;
+    border: 1px solid black;
+
+}

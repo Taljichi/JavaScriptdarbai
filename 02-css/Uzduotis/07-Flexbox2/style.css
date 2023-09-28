@@ -1,0 +1,139 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+#eile1 {
+    background-color: aquamarine;
+    display: flex;
+
+}
+
+#eile2 {
+    background-color: bisque;
+    display: flex;
+}
+
+#eile2 p {
+    margin: 20px;
+}
+
+#eile3 {
+    background-color: darkseagreen;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+#eile4 {
+    display: flex;
+    background-color: bisque;
+    padding: 30px;
+    gap: 20px;
+}
+
+#eile4 p {
+    background-color: white;
+    flex: 1;
+}
+
+#eile5 {
+    background: darkseagreen;
+    display: flex;
+    padding: 50px 30px;
+    gap: 30px;
+}
+
+#eile5 p {
+    flex: 1;
+    background-color: beige;
+    padding: 30px;
+}
+
+#eile6 {
+    background: bisque;
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+}
+
+#eile6 p {
+    background: azure;
+    width: 120px;
+    
+}
+
+#eile7 {
+    background: darkseagreen;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+
+#eile7 .stulpelis {
+    background-color: whitesmoke;
+    padding: 20px;
+    width: 130px;
+}
+
+#eile8 {
+    display: flex;
+    background: darkgray;
+    padding: 10px;
+    gap: 10px;
+    height: 100px;
+    justify-content: space-evenly;
+}
+
+#eile8 .stulpelis {
+    background: whitesmoke;
+    width: 120px;
+
+}
+
+#eile9 {
+    display: flex;
+    background-color: cadetblue;
+    padding: 20px;
+    gap: 80px;
+    justify-content: space-between;
+    height: 150px;
+}
+
+#eile9 p {
+    width: 250px;
+    background-color: whitesmoke;
+}
+
+#eile10 {
+    display: flex;
+    background-color: rgb(33, 133, 55);
+    padding: 20px;
+    gap: 150px;
+    justify-content: space-evenly;
+
+}
+
+#eile10 p {
+    width: 120px;
+    background-color: whitesmoke;
+}
+
+#eile11 {
+    display: flex;
+    background-color: rgb(28, 102, 187);
+    padding: 20px;
+    gap: 50px;
+    justify-content: flex-end;
+
+}
+
+#eile11 p {
+    width: 200px;
+    background-color: whitesmoke;
+}

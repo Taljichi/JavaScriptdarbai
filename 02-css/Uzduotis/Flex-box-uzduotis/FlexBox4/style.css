@@ -2,3 +2,55 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+.eile {
+    display: flex;
+}
+
+header {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: greenyellow;
+    height: 500px;
+}
+
+header p {
+    margin-bottom: 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+}
+
+header a:hover {
+    color: white;
+    background-color: black;
+}
+
+.aprasas {
+    background-color: aqua;
+    padding: 20px;
+}
+
+.straipsniai {
+    background-color: rgb(233, 190, 139);
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: left;
+    box-sizing: border-box;
+    
+}
+
+.straipsniai .stulpelis {
+    background-color: rgb(238, 222, 204);
+    width: calc((100% - 40px) / 4);
+    padding: 20px;
+    margin: 0;
+}
+

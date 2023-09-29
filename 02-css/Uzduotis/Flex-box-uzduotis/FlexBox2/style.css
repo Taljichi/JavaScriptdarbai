@@ -1,0 +1,67 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: flex;
+    padding: 15px;
+}
+
+div p {
+    background: white;
+    padding: 10px 0px;
+    margin: 0;
+}
+
+.stulpelis1 {   
+    background-color: orange;
+    justify-content: flex-start;
+    height: 250px;
+}
+
+.stulpelis1 p {
+    width: 250px;
+}
+
+.stulpelis2 {
+    background: greenyellow;
+    justify-content: flex-end;
+    height: 250px;
+}
+.stulpelis2 p {
+    width: 250px;
+}
+
+.stulpelis3 {
+    background-color: orangered;
+    height: 250px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.stulpelis3 p {
+    width: 25%;
+}
+
+.stulpelis4 {
+    background: aqua;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.stulpelis4 p {
+ width: 25%;
+} 
+
+.stulpelis5 {
+    background: red;
+    height: 250px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.stulpelis5 p {
+    width: 25%;
+}

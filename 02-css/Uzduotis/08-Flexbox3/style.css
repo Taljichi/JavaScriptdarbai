@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+#eile1 {
+    background: aquamarine;
+    height: 300px;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#eile1 p {
+    background: whitesmoke;
+    flex: 1;
+}
+
+#eile2 {
+    background-color: bisque;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    gap: 20px;
+}
+
+#eile2 p {
+    background-color: cadetblue;
+    width: 30%;
+}
+
+#eile3 {
+    background-color: cadetblue;
+    display: flex;
+    padding: 20px;
+    gap: 20px ;
+    height: 350px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#eile3 p {
+    background-color: khaki;
+    width: 30%;
+}
+
+#eile4 {
+    background-color: rgb(37, 123, 126);
+    display: flex;
+    padding: 20px;
+    gap: 20px ;
+    height: 300px;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+#eile4 p {
+    background-color: khaki;
+    width: 26%;
+
+}
+
+#eile5 {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    background-color: brown;
+    justify-content: center;
+
+}
+
+#eile5 .stulpelis {
+    background: bisque;
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#eile5 .stulpelis h3 {
+    margin-top: 0;
+}
+
+#eile6 {
+    background-color: bisque;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#eile6 p {
+    background-color: brown;
+    width: calc(50% - 10px );
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#eile7 {
+    background-color: cadetblue;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#eile7 p {
+    background-color: aquamarine;
+    width: calc((100% - 40px) / 3);
+}
+
+
+#eile8 {
+    background-color: chocolate;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#eile8 .stulpelis {
+    background: bisque;
+    width: calc((100% - 60px) / 4) ;
+    padding: 10px;
+    box-sizing: border-box;
+}

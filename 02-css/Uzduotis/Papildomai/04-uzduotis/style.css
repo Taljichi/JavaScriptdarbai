@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -22,10 +23,10 @@ html, body {
 }
 
 #star img {
-position: absolute;
-right: 28px;
-bottom: 86px;
-z-index: 25;
+    position: absolute;
+    right: 28px;
+    bottom: 86px;
+    z-index: 25;
 }
 
 #elipse img {
@@ -58,45 +59,45 @@ z-index: 25;
 #tekstas h1 {
     color: #FFF;
     font-family: 'Inter', sans-serif;
-font-size: 48px;
-font-style: normal;
-font-weight: 600;
-line-height: 100%; /* 48px */
-letter-spacing: 0.42px;
-margin: 0px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 100%;
+    /* 48px */
+    letter-spacing: 0.42px;
+    margin: 0px;
 }
 
 #tekstas p {
     color: #FFF;
     font-family: 'Inter', sans-serif;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px; /* 173.333% */
-margin: 17px 0px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 173.333% */
+    margin: 17px 0px;
 }
 
 #juda {
     display: flex;
-padding: 8px 16px;
-justify-content: center;
-align-items: center;
-border-radius: 12px;
-border: 2px solid #F17965;
-width: 130px;
-height: 26px;
-text-decoration: none;
-color: #F17965;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 2px solid #F17965;
+    width: 130px;
+    height: 26px;
+    text-decoration: none;
+    color: #F17965;
 }
 
 #juda h3 {
-    
+
     font-family: 'Inter', sans-serif;
-font-size: 15px;
-font-style: normal;
-font-weight: 600;
-line-height: 26px; /* 173.333% */
-letter-spacing: -0.75px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    /* 173.333% */
+    letter-spacing: -0.75px;
 }
 
 #juda:hover {

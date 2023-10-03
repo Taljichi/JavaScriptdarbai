@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            list-style-type: none;
+            /* margin-left: 15px; */
+        }
+        nav ul li a {
+            padding: 5px 10px;
+            display: inline-block;
+            border-bottom: 2px solid transparent;
+        }
+        nav ul li a:hover {
+            border-bottom-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="brand">
+            <a href="#">Pavadinimas</a>
+        </div>
+        <div class="links-wrapper">
+            <ul>
+                <!-- li*4>a[href=#]{link $} -->
+                <li><a href="#">link 1</a></li>
+                <li><a href="#">link 2</a></li>
+                <li><a href="#">link 3</a></li>
+                <li><a href="#">link 4</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+</body>
+</html>

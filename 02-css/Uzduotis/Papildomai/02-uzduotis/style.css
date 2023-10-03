@@ -62,7 +62,6 @@ h1 {
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Inter;
     font-size: 24px;
-    font-style: normal;
     font-weight: 600;
     line-height: 28px;
     /* 116.667% */
@@ -75,7 +74,6 @@ h1 {
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Inter;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
     line-height: 22px;
     /* 183.333% */
@@ -96,7 +94,6 @@ h2 {
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Inter;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 22px;
     /* 157.143% */
@@ -108,7 +105,6 @@ h2 {
     color: var(--black-700-black, #121212);
     font-feature-settings: 'clig' off, 'liga' off;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
     line-height: 22px;
     /* 120% */

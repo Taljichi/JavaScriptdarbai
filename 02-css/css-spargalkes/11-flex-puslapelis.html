@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body, h1, p {
+            margin: 0;
+        }
+
+        body {
+            /* background-image: url('bg.jpg');
+            background-size: cover; */
+            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+                url('bg.jpg');
+            /* background: spalva, foto; */
+        }
+
+        nav {
+            background: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .turinys {
+            background: black;
+            color: white;
+            margin: 50px auto;
+            width: 400px;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        .korteles {
+            display: flex;
+            gap: 20px;
+        }
+
+        .kortele {
+            border: 1px solid white;
+            flex: 1;
+            text-align: center;
+            /* text-align dedam ant tevinio
+            ir jis sucentruoja elementus
+            kuris yra pvz
+            display: inline / inline-block */
+        }
+
+        footer {
+            background: black;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <p>tekstukas navigacijos</p>
+    </nav>
+
+    <div class="turinys">
+        <h1>pavadinimas</h1>
+        <p>koks nors tekstas</p>
+        <div class="korteles">
+            <div class="kortele">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat velit similique, omnis alias exercitationem autem consequatur eos quisquam voluptas eligendi.
+                </p>
+            </div>
+            <div class="kortele">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda vero velit facere dolor eos ullam illum repellendus. Quae, alias in!
+                </p>
+            </div>
+            <div class="kortele">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ducimus autem nostrum placeat obcaecati illo ab voluptates inventore delectus vero.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        tekstukas footerio
+    </footer>
+    
+</body>
+</html>

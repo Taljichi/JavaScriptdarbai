@@ -1,0 +1,29 @@
+#pirmas {}
+
+#antras {}
+
+#trecias {}
+
+@media only screen and (max-width: 1140px) {
+    #pirmas {}
+
+    #antras {}
+}
+
+@media only screen and (max-width: 768px) {
+    #antras {}
+}
+
+@media only screen and (max-width: 500px) {
+    #antras {}
+
+    #trecias {}
+}
+
+@media only screen and (max-width: 375px) {
+    #pirmas {}
+    
+    #antras {}
+
+    #trecias {}
+}

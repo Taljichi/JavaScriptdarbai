@@ -1,0 +1,116 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+/* =====================================
+PIRMAS BLOKAS
+===================================== */
+#pirmas {
+    background-color: aquamarine;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+/* css media queries */
+
+/* rezoliucija
+    selektorius
+        kas keicias */
+
+/* 
+    width
+    height
+    max-width
+    max-height
+    min-width
+    min-height
+*/
+
+@media only screen and (max-width: 500px) {
+    #pirmas {
+        background-color: chartreuse;
+    }
+}
+
+/* =====================================
+ANTRAS BLOKAS
+===================================== */
+
+#antras {
+    background-color: burlywood;
+    height: 350px;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    #antras {
+        background-color: bisque;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #antras {
+        background-color: darkorange;
+    }
+}
+
+/* =====================================
+TRECIAS BLOKAS
+===================================== */
+
+#trecia {
+    background-color: chocolate;
+    padding: 50px 20px;
+}
+
+@media only screen and (min-width: 300px) {
+    #trecia {
+        background-color: beige;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #trecia {
+        background-color: cornflowerblue;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    #trecia {
+        background-color: crimson;
+    }
+}
+
+/* =====================================
+KETVIRTAS BLOKAS
+===================================== */
+
+#ketvirtas {
+    background-color: khaki;
+    padding: 50px 20px;
+}
+
+#ketvirtas h1 {
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 430px) {
+    #ketvirtas h1 {
+        font-size: 24px;
+    }
+}
+
+#ketvirtas p {
+    font-size: 16px;
+}
+

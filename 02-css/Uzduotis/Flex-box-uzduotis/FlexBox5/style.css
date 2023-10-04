@@ -106,22 +106,23 @@ HEADER
 
 .korteles .visos h2 {
     color: #FFF;
-text-align: center;
-font-family: 'Montserrat';
-font-size: 24px;
-font-weight: 800;
-font-variant: all-small-caps;
-letter-spacing: 0.96px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 800;
+    font-variant: all-small-caps;
+    letter-spacing: 0.96px;
 }
 
 .korteles .visos p {
     color: #FFF;
-text-align: center;
-font-family: 'Montserrat';
-font-size: 18px;
-font-weight: 500;
-line-height: 25px; /* 138.889% */
-letter-spacing: 0.54px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    /* 138.889% */
+    letter-spacing: 0.54px;
 }
 
 .visos .read a {
@@ -132,4 +133,22 @@ letter-spacing: 0.54px;
     font-weight: 800;
     font-variant: all-small-caps;
     letter-spacing: 1.52px;
+}
+
+footer {
+    background: #000;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .foot {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
 }

@@ -1,7 +1,136 @@
-body {
-    background-color: orange;
+$nav-aukstis: 10vh;
+$color-primary: #8632ad;
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+nav.top-nav {
+    background-color: $color-primary;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $nav-aukstis;
+    box-sizing: border-box;
+
+    ul.nuorodos {
+        padding: 0;
+        margin: 0;
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 40px;
+
+            a {
+                text-transform: uppercase;
+                font-size: 12px;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    a {
+        color: orange;
+        text-decoration: none;
+    }
 
     .blokas {
-        color: red;
+        border: 1px solid black;
+
+        &.paryskintas {
+            border-color: red;
+        }
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center ;
+    height: calc(100vh - $nav-aukstis);
+    background-color: aquamarine;
+    box-sizing: border-box;
+
+    .turinys {
+        h1 {
+            text-transform: uppercase;
+        }
+
+        p {
+            max-width: 300px;
+        }
+
+        .mygtukai {
+            a {
+                display: inline-block;
+                background: $color-primary;
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px ;
+                transition: 0.2s all;
+
+                &.pirminis {
+                    background-color: $color-primary;
+                    color: white;
+
+                    &:hover {
+                        background-color: white;
+                        color: $color-primary;
+                    }
+                }
+
+                &.antrinis {
+                    background-color: white;
+                    color: $color-primary;
+
+                    &:hover {
+                        background-color: $color-primary;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.straipsniai-wrapper {
+
+    background-color: aqua;
+    padding: 30px 30px;
+
+
+    h2 {
+        text-align: center;
+    }
+
+    .straipsniai-list {
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        article {
+            background-color: aquamarine;
+            text-align: left;
+            padding: 20px;
+            width: calc((100% - 20px*3) / 4);
+            height: 200px;
+        }
+
+        h3 {
+
+        }
+        p {
+
+        }
     }
 }

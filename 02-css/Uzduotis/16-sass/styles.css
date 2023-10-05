@@ -1,6 +1,103 @@
-body {
-  background-color: orange;
+html, body {
+  margin: 0;
+  padding: 0;
 }
-body .blokas {
-  color: red;
+
+nav.top-nav {
+  background-color: #8632ad;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  box-sizing: border-box;
+}
+nav.top-nav ul.nuorodos {
+  padding: 0;
+  margin: 0;
+}
+nav.top-nav ul.nuorodos li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 40px;
+}
+nav.top-nav ul.nuorodos li a {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+nav.top-nav ul.nuorodos li a:hover {
+  color: white;
+}
+nav.top-nav a {
+  color: orange;
+  text-decoration: none;
+}
+nav.top-nav .blokas {
+  border: 1px solid black;
+}
+nav.top-nav .blokas.paryskintas {
+  border-color: red;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  background-color: aquamarine;
+  box-sizing: border-box;
+}
+header .turinys h1 {
+  text-transform: uppercase;
+}
+header .turinys p {
+  max-width: 300px;
+}
+header .turinys .mygtukai a {
+  display: inline-block;
+  background: #8632ad;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: 0.2s all;
+}
+header .turinys .mygtukai a.pirminis {
+  background-color: #8632ad;
+  color: white;
+}
+header .turinys .mygtukai a.pirminis:hover {
+  background-color: white;
+  color: #8632ad;
+}
+header .turinys .mygtukai a.antrinis {
+  background-color: white;
+  color: #8632ad;
+}
+header .turinys .mygtukai a.antrinis:hover {
+  background-color: #8632ad;
+  color: white;
+}
+
+.straipsniai-wrapper {
+  background-color: aqua;
+  padding: 30px 30px;
+}
+.straipsniai-wrapper h2 {
+  text-align: center;
+}
+.straipsniai-wrapper .straipsniai-list {
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.straipsniai-wrapper .straipsniai-list article {
+  background-color: aquamarine;
+  text-align: left;
+  padding: 20px;
+  width: calc((100% - 60px) / 4);
+  height: 200px;
 }

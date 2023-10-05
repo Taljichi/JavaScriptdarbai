@@ -1,0 +1,338 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*=========================== 
+Navigacija
+=============================*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 108px;
+
+}
+
+nav ul {
+    padding: 32px 108px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+nav ul li a {
+    color: #1F1F1F;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: none;
+    margin-right: 40px;
+
+}
+
+nav .Signup {
+    color: #FFF;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-decoration: none;
+    border-radius: 14px;
+    background: #FF6978;
+    padding: 8px 32px;
+    width: 63px;
+    height: 28px;
+}
+
+/*=========================== 
+Keliones 1
+=============================*/
+
+.planas1 {
+    display: inline-flex;
+    padding-right: 0px;
+    align-items: center;
+    gap: 27px;
+    background: #FFEEE2;
+    border-radius: 25px;
+    margin: 54px 108px 58px;
+}
+
+.planas1 .kelio1 img {
+    width: 702px;
+    height: 485px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    object-fit: cover;
+}
+
+.planas1 .Text1 {
+    padding-right: 103px;
+    text-align: left;
+}
+
+.planas1 .Text1 h2 {
+    color: #1F1F1F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 120%;
+    margin: 0;
+}
+
+.planas1 .Text1 p {
+    color: #1F1F1F;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 28px;
+    margin: 16px 0px;
+}
+
+.planas1 .Text1 a {
+    color: #FFF;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-decoration: none;
+    border-radius: 14px;
+    background: #FF6978;
+    padding: 8px 32px;
+    width: 63px;
+    height: 28px;
+}
+
+/*=========================== 
+Keliones 2
+=============================*/
+
+.planas2 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0px;
+    align-items: center;
+    gap: 27px;
+    border-radius: 25px;
+    margin: 0px 108px 32px;
+}
+
+.planas2 .kelio2 img {
+    width: 637px;
+    height: 484px;
+    object-fit: cover;
+}
+
+.planas2 .Text2 {
+    padding-left: 105px;
+    padding-right: 70px;
+    text-align: left;
+}
+
+.planas2 .Text2 h2 {
+    color: #1F1F1F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 120%;
+    margin: 0;
+}
+
+.planas2 .Text2 p {
+    color: #1F1F1F;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 28px;
+    margin: 16px 0px;
+}
+
+.planas2 .Text2 a {
+    color: #FFF;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-decoration: none;
+    border-radius: 14px;
+    background: #FF6978;
+    padding: 8px 32px;
+    width: 63px;
+    height: 28px;
+}
+
+/*=========================== 
+Keliones 3
+=============================*/
+
+.planas3 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0px;
+    align-items: center;
+    gap: 27px;
+    border-radius: 25px;
+    margin: 0px 108px 64px;
+}
+
+.planas3 .kelio3 img {
+    width: 637px;
+    height: 404px;
+    object-fit: cover;
+}
+
+.planas3 .Text3 {
+    padding-left: 44px;
+    padding-right: 70px;
+    text-align: left;
+}
+
+.planas3 .Text3 h2 {
+    color: #1F1F1F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 120%;
+    margin: 0;
+}
+
+.planas3 .Text3 p {
+    color: #1F1F1F;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 28px;
+    margin: 16px 0px;
+}
+
+.planas3 .Text3 a {
+    color: #FFF;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-decoration: none;
+    border-radius: 14px;
+    background: #FF6978;
+    padding: 8px 32px;
+    width: 63px;
+    height: 28px;
+}
+
+
+/*=========================== 
+Keliones 3
+=============================*/
+
+.planas4 {
+    display: inline-flex;
+    padding: 64px 108px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 42px;
+}
+
+.planas4 h2 {
+    color: #1F1F1F;
+    font-family: 'Montserrat';
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+}
+
+.keliones {
+    display: flex;
+    gap: 24px;
+
+}
+
+.planas4 h3 {
+    color: #1F1F1F;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+}
+
+.planas4 p {
+    color: #1F1F1F;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 28px;
+}
+
+.planas4 img {
+    width: 392px;
+    height: 287px;
+    border-radius: 20px;
+}
+
+/*=========================== 
+Customers part
+=============================*/
+
+.customers {
+    padding: 64px 108px;
+    gap: 32px;
+    background: #FFEEE2;
+    height: 659px;
+}
+
+.customers .customer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.customers .customer1 {
+    width: 600px;
+    height: 391px;
+    border-radius: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.60);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.60) 100%), #FFEEE2;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 94px 104px;
+}
+
+.customers .customer1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.customers .customer1 p, h3 {
+    margin: 0;
+}
+
+.customers .customer h3  {
+    color: #1F1F1F;
+text-align: center;
+font-family: 'Montserrat';
+font-size: 32px;
+font-weight: 700;
+line-height: 36px;
+padding-top: 6px;
+padding-bottom: 6px;
+}
+
+.customers .customer p {
+    color: #1F1F1F;
+text-align: center;
+font-family: 'Segoe UI';
+font-size: 18px;
+font-weight: 350;
+line-height: 28px; /* 155.556% */
+}
+

@@ -1,0 +1,25 @@
+// body {
+//     background-color: orange;
+// }
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+// GENERAL 
+
+@import 'general/reset';
+@import 'general/typography';
+
+// COMPONENTS
+
+@import 'components/footer';
+@import 'components/navbar';
+
+// PAGES
+
+@import 'pages/about';
+@import 'pages/home';
+@import 'pages/services';

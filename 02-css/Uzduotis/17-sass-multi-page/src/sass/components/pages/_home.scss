@@ -1,0 +1,30 @@
+.home-page {
+    header {
+        background-color: cornflowerblue;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .paslaugos {
+        padding: 80px;
+        text-align: center;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .paslaugu-sarasas {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            
+            .paslauga {
+                width: 25%;
+            }
+        }
+    }
+}

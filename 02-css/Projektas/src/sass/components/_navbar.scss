@@ -1,0 +1,23 @@
+.eile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+    nav {
+    padding: 24px 80px;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 10vh;
+    width: 1440px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 50px;
+
+    a img {
+
+    }
+}

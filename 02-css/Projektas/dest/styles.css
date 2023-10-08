@@ -1,0 +1,23 @@
+/* Apply CSS to center the container */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Optional: Set a background color for the body */
+    font-family: Arial, sans-serif; /* Optional: Choose a font */
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff; /* Optional: Set a background color for the container */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
+}

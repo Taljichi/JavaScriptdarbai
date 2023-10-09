@@ -4,21 +4,32 @@
     gap: 20px;
 }
 
-    nav {
+nav {
     padding: 24px 80px;
     justify-content: space-between;
     align-items: center;
     max-height: 10vh;
     width: 1440px;
     text-align: center;
+    height: 72px;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
     display: inline-block;
-    list-style-type: none;
     margin-left: 50px;
-
-    a img {
-
-    }
 }
+
+nav ul li a {
+    text-decoration: none; 
+}
+
+nav ul li a img {
+}
+

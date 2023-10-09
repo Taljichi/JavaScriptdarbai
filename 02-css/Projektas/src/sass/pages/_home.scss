@@ -14,7 +14,7 @@
         text-align: left;
         align-items: center;
         flex-wrap: wrap;
-        padding: 198px 310px 304px 80px ;
+        padding: 198px 310px 304px 80px;
         box-sizing: border-box;
     }
 
@@ -22,15 +22,14 @@
         position: relative;
         margin-top: 96px;
         margin-right: 80px;
-            .bg1 {
-        position: absolute;
-        width: 737px;
-        height: 536px;
-        left: 425px;
-        bottom: -140px;
-    }
-    }
     
-
+        .bg1 {
+            position: absolute;
+            max-width: 100%;
+            height: auto;
+            left: 50%;
+            bottom: -140px;
+            transform: translateX(-50%);
+        }
+    }
 }
-

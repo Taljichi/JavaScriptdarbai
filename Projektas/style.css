@@ -105,10 +105,20 @@ nav .nuorodos ul li a {
     letter-spacing: 0.6px;
     text-transform: uppercase;
     text-decoration: none;
+    transition: 0.2s all;
 }
 
-nav .nuorodos ul li a:hover {
+nav .nuorodos ul li .black {
     font-weight: 600;
+    transition: 0.2s all;
+}
+
+nav .nuorodos ul li .black:hover {
+    text-decoration: underline;
+    
+}
+
+nav .nuorodos ul li .light:hover {
     text-decoration: underline;
 }
 
@@ -187,6 +197,13 @@ HOMEPAGE TYPOGRAHY
     gap: 10px;
     background: var(--Coffee-black-100, #32292F);
     margin-top: 24px;
+    transition: 0.2s all;
+}
+
+.home-page .turinys .mygtukas a:hover {
+
+    background-color: white;
+    color: #32292F;
 }
 
 /* ======================================
@@ -373,6 +390,7 @@ PRODUCTS  TYPOGRAHY !!!!!
     max-width: 1440px;
     margin: 0 auto;
     box-sizing: border-box;
+    padding-bottom: 140px;
 }
 
 .ideas .turinys3 {
@@ -466,7 +484,6 @@ footer {
 footer {
     padding: 24px 80px;
     justify-content: space-between;
-    align-items: center;
     width: 1440px;
     text-align: center;
     height: 236px;
@@ -491,18 +508,25 @@ footer .nuorodos1 ul li a {
 footer .turinys5 {
     display: flex;
     justify-content: space-around;
-    align-items:flex-start;
+    padding-bottom: 40px;
 }
 
 footer .turinys5 ul {
     width: 176px;
     text-align: left;
-    padding-top: 50px;
 }
 
 footer .turinys5 ul li {
     text-decoration: none;
     list-style: none;
+}
+
+footer .border hr { 
+    width: 1268px;
+        border: none; /* Remove the default border */
+        height: 2px; /* Set the height of the line */
+        background-color: #D6D4D5; /* Change the background color to red */
+        margin: 0; /* Add some spacing above and below the line */
 }
 
 /* ==============================

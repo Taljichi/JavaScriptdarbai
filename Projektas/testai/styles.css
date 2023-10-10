@@ -1,0 +1,40 @@
+/* Styles for the slider container */
+.slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+/* Style for the slider line */
+.line {
+    height: 1px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #32292F; /* Color for the bold section */
+    box-shadow: 33.33% 0 0 0 #f0f0f0, 66.67% 0 0 0 #f0f0f0; /* Create the bold section */
+}
+
+/* Styles for the text */
+.text {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.fraction {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #333; /* Darker color for the fraction */
+}

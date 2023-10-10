@@ -38,6 +38,38 @@ body {
 }
 
 
+/* 
+SLIDERS STYLE
+*/
+
+.home-page .sliders {
+    padding: 24px;
+    position: absolute;
+    right: 20px;
+}
+
+.home-page .progress-bar {
+    width: 275px;
+    height: 1px;
+    background: var(--Coffee-black-100, #D6D4D5);
+    position: relative;
+}
+
+.home-page .progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 33%;
+    background: var(--Coffee-black-100, #32292F);
+    }
+
+    .home-page .fraction {
+        position: absolute;
+        left: 300px;
+        top: -30px;
+        }
+
 /* =====================================
 NAVIGATION STYLE
 ======================================*/
@@ -159,6 +191,7 @@ nav .nuorodos ul li .light:hover {
 .home-page .bg1 {
     width: 737px;
     height: 536px;
+    object-fit: cover;
 }
 
 /* ===================================
@@ -536,10 +569,10 @@ footer .turinys5 ul li {
 
 footer .border hr { 
     width: 1268px;
-        border: none; /* Remove the default border */
-        height: 2px; /* Set the height of the line */
-        background-color: #D6D4D5; /* Change the background color to red */
-        margin: 0; /* Add some spacing above and below the line */
+        border: none; 
+        height: 2px; 
+        background-color: #D6D4D5; 
+        margin: 0; 
 }
 
 /* ==============================

@@ -321,7 +321,7 @@ PRODUCTS  TYPOGRAHY !!!!!
     line-height: 24px;
 }
 
-.produktai .turinys1 .mygtukas {
+.produktai .turinys1 .mygtukas a {
     color: var(--Coffee-black-100, #32292F);
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -330,14 +330,11 @@ PRODUCTS  TYPOGRAHY !!!!!
     line-height: 24px;
     text-decoration: none;
     padding: 12px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 327px;
     border: 1px solid var(--Coffee-black-100, #32292F);
 }
 
-.produktai .turinys1 .mygtukas:hover {
+
+.produktai .turinys1 .mygtukas a:hover {
     border: 1px solid var(--Coffee-black-100, #fff);
     background-color: #32292F;
     color: white;
@@ -374,7 +371,7 @@ PRODUCTS  TYPOGRAHY !!!!!
     line-height: 24px;
 }
 
-.produktai .turinys2 .mygtukas {
+.produktai .turinys2 .mygtukas a {
     color: var(--Coffee-black-100, #32292F);
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -389,8 +386,199 @@ PRODUCTS  TYPOGRAHY !!!!!
     border: 1px solid var(--Coffee-black-100, #32292F);
 }
 
-.produktai .turinys2 .mygtukas:hover {
+.produktai .turinys2 .mygtukas a:hover {
     border: 1px solid var(--Coffee-black-100, #fff);
     background-color: #32292F;
     color: white;
+}
+
+/*=========================================== 
+  IDEAS !!!!!
+=============================================*/
+
+.ideas {
+    text-align: center;
+    background-color: #fff;
+    padding: 0;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.ideas .turinys3 {
+    width: 100%;
+    gap: 24px;
+}
+
+.ideas .turinys3 .img1 {
+    width: 327px;
+    height: 277px;
+}
+
+.ideas .turinys3 .img2 {
+    width: 327px;
+    height: 277px;
+}
+
+.ideas .turinys4 {
+    width: 100%;
+    gap: 24px;
+    padding-top: 64px;
+}
+
+
+.ideas .turinys4 .img3 {
+    width: 327px;
+    height: 277px;
+}
+
+.ideas .turinys4 .img4 {
+    width: 327px;
+    height: 277px;
+}
+
+/* ========================================= 
+ IDEAS TYPOGRAFHY
+ +=====================================*/
+
+.ideas h2 {
+    color: var(--Coffee-black-100, #32292F);
+    padding: 176px 80px 48px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.ideas .turinys3 p {
+    color: var(--Coffee-black-100, #32292F);
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 24px;
+}
+
+.ideas .turinys4 p {
+    color: var(--Coffee-black-100, #32292F);
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 24px;
+}
+
+/* ===================================
+FOOTER !!!!!
+======================================*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+footer {
+    justify-content: flex-start;
+    width: 375px;
+    text-align: left;
+    height: 458px;
+    box-sizing: border-box;
+    padding-left: 24px;
+    
+}
+
+footer .nuorodos1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .nuorodos1 ul li {
+    padding-top: 16px;
+}
+
+footer .nuorodos1 ul li a {
+    text-decoration: none;
+}
+
+footer .turinys5 {
+}
+
+footer .turinys5 ul {
+    width: 176px;
+    text-align: left;
+    margin-right: 180px;
+}
+
+footer .turinys5 ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+footer .border hr { 
+    width: 327px;
+        border: none;
+        height: 2px; 
+        background-color: #D6D4D5; 
+        margin: 0;
+        margin-left: 24px;
+
+}
+
+
+/* ==============================
+ FOOTER TYPOGRAPHY
+===============================*/
+
+footer .logo1 a {
+    color: var(--Coffee-black-100, #32292F);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+footer .logo1 {
+    margin-right: 180px;
+}
+
+footer .nuorodos1 ul li a {
+    color: var(--Coffee-black-100, #32292F);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+footer .nuorodos1 ul li a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+footer .turinys5 ul li {
+    color: var(--Coffee-black-100, #32292F);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+footer p {
+    color: var(--Coffee-black-100, #32292F);
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 22px;
 }

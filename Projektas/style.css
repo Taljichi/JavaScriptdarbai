@@ -45,8 +45,6 @@ SLIDERS STYLE
 
 .home-page .sliders {
     padding: 24px;
-    position: absolute;
-    right: 20px;
 }
 
 .home-page .progress-bar {
@@ -68,7 +66,7 @@ SLIDERS STYLE
     .home-page .fraction {
         position: absolute;
         left: 300px;
-        top: -30px;
+        top: -10px;
         }
 
 /* =====================================

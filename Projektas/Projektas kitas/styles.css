@@ -1,0 +1,200 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+h1,
+h3 {
+    margin: 0;
+}
+
+.Container {
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+/* 
+  NAVIGATION!!!
+*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 48px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav .logo {
+    margin-left: 100px;
+}
+
+nav ul li .contact {
+    padding: 5px 16px;
+    border-radius: 4px;
+    background: var(--Primary-100, #1289AF);
+    color: white;
+    box-sizing: border-box;
+}
+
+/* 
+    navigation typograhy
+*/
+
+nav .logo {
+    color: var(--Black, #000);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+nav ul li a {
+    color: var(--text-citation-and-h-2, #333);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/* 
+    header !!!
+*/
+
+header {
+    height: 688px;
+}
+
+header .background {
+    position: relative;
+}
+
+header .bg {
+    height: 688px;
+    width: 1366px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
+header .bgb {
+    height: 688px;
+    width: 1366px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.8;
+    left: 0;
+    top: 0;
+    z-index: 6;
+}
+
+header .turinys {
+    z-index: 50;
+    position: absolute;
+    padding: 191px 592px 193px 100px;
+}
+
+/* 
+HEADER TYPOGRAHY!!!
+*/
+
+header .turinys h1 {
+    text-align: left;
+    color: var(--White, #FFF);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 62px;
+    letter-spacing: -2.8px;
+}
+
+header .turinys h3 {
+    margin-top: 24px;
+    text-align: left;
+    color: var(--White, #FFF);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 4px;
+}
+
+header .turinys .mygtukas {
+    text-align: left;
+    padding-top: 32px;
+}
+
+header .turinys .mygtukas a {
+    color: var(--White, #FFF);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: var(--Primary-100, #1289AF);
+    box-shadow: 0px 2px 10px 0px rgba(54, 1, 103, 0.30);
+    box-sizing: border-box;
+}
+
+header .turinys .mygtukas img {
+    height: 24px;
+    width: 24px;
+}
+
+/* 
+TYPOGRAPHY
+*/
+
+.tekstai p {
+
+    color: var(--text-paragraph, #666);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.tekstai .bg1 {
+    width: 770px;
+    height: 424px;
+    object-fit: cover;
+}
+
+.challenge .bgc {
+    width: 770px;
+    height: 433px;
+    object-fit: cover;
+}
+
+.solution .walk {
+    width: 372px;
+    height: 209px;
+    object-fit: cover;
+}
+
+.solution .people {
+    width: 372px;
+    height: 209px;
+    object-fit: cover;
+}

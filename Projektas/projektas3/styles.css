@@ -1,0 +1,391 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Plus Jakarta Sans', sans-serif;
+*/
+
+.container {
+    display: flex;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background: #FFF;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 300px 25px;
+}
+
+nav a {
+    color: #1B6BED;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+
+
+/* ==================================
+    Main PAGE FOTO
+=====================================*/
+
+.atrask {
+    position: relative;
+    background: black;
+    width: 1920px;
+    height: 931px;
+}
+
+.atrask .bg {
+    width: 1920px;
+    height: 931px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.atrask .turinys {
+    position: absolute;
+    z-index: 10;
+    top: 342px;
+    left: 480px;
+    text-align: center;
+}
+
+.atrask .turinys h1 {
+    color: #FFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.atrask .turinys h3 {
+    color: #FFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.atrask .turinys .mygtukas a {
+    color: #FFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+
+    display: inline-flex;
+    padding: 15px 34px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: var(--gradientas, linear-gradient(180deg, #00D4E4 -40.5%, #1F59EE 97.28%));
+}
+
+.atrask .fonas1 {
+    z-index: 10;
+    width: 639.751px;
+    height: 184.321px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    top: 747px;
+}
+
+/* 
+
+*/
+
+
+.lietuva {
+    background: #F9F9F9;
+    position: relative;
+    height: 1263px;
+}
+
+.lietuva .nuotraukos {
+    position: absolute;
+    gap: 20px;
+    top: 550px;
+    left: 900px;
+    z-index: 15;
+    display: inline-flex;
+}
+
+.lietuva .rodykles {
+    z-index: 30;
+    position: absolute;
+    left: 800px;
+    top: 1050px;
+}
+
+.lietuva .rodykles .right {
+    margin-left: 100px;
+}
+
+.lietuva .rodykles .left {
+    margin-right: 100px;
+}
+
+.lietuva .nuotraukos .dvaras {
+    width: 320px;
+    height: 449.293px;
+    object-fit: cover;
+    border-radius: 15.586px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: -8px 8px 42px 0px rgba(0, 0, 0, 0.25);
+}
+
+.lietuva .nuotraukos .kryzius {
+    width: 320px;
+    height: 449px;
+    object-fit: cover;
+    border-radius: 15.586px;
+    z-index: 15;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.lietuva .nuotraukos .backgroudnw {
+    margin-left: 70px;
+    width: 320px;
+    height: 449px;
+    z-index: 20;
+    position: relative;
+}
+
+.lietuva .nuotraukos .backgroudnw .backw {
+    background-color: white;
+    opacity: 0.5;
+    width: 320px;
+    height: 449px;
+    z-index: 20;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.lietuva .pradzia {
+    padding-top: 167px;
+    padding-left: 379px;
+    padding-right: 300px;
+    display: flex;
+}
+
+.lietuva .pradzia p {
+    color: #666;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+.lietuva .pradzia .quota {
+    width: 64px;
+    height: 64px;
+    padding-top: 16px;
+}
+
+.lietuva .lithu {
+    position: absolute;
+    z-index: 1;
+    top: 400px;
+    left: 900px;
+    opacity: 0.8;
+}
+
+.lietuva .turinys {
+    background-color: #FFF;
+    position: absolute;
+    top: 456px;
+    left: 300px;
+    z-index: 10;
+    width: 889px;
+    height: 634px;
+    padding-left: 74px;
+    padding-top: 70px;
+}
+
+.lietuva .turinys .turinukas h4 {
+    color: #A6A6A6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.lietuva .turinys .turinukas h3 {
+    color: #4B4B4B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 136.188%;
+    text-transform: capitalize;
+    padding-top: 98px;
+}
+
+.lietuva .turinys .turinukas h5 {
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 136.188%;
+    text-transform: uppercase;
+}
+
+.lietuva .turinys .turinukas p {
+    color: #888;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 148.188%;
+    width: 486px;
+    padding-bottom: 99px;
+}
+
+.lietuva .turinys .turinukas .mygtukai {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 500px;
+    gap: 20px;
+}
+
+.lietuva .turinys .turinukas .mygtukai a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    display: flex;
+    padding: 15px 34px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 24px;
+    border: 2px solid var(--gradientas, #00D4E4);
+}
+
+.lankytojai {
+    position: relative;
+    display: flex;
+    background-color: black;
+}
+
+.lankytojai .bgg {
+    width: 1920px;
+    height: 852px;
+    background: linear-gradient(0deg, rgba(148, 160, 86, 0.83) 0%, rgba(148, 160, 86, 0.83) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    background-blend-mode: hue, multiply;
+    opacity: 0.8;
+}
+
+.lankytojai .turinukas {
+    width: 450px;
+}
+
+.lankytojai .turinys {
+    width: 1320px;
+    height: 471px;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    gap: 146px;
+    left: 300px;
+    top: 191px;
+    box-sizing: border-box;
+    padding: 66px 127px 67px;
+}
+
+.lankytojai .turinys .turinukas h3 {
+
+    color: #333;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    width: 438px;
+}
+
+.lankytojai .turinys .turinukas p {
+    color: #888;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    width: 420px;
+}
+
+.lankytojai .skaiciai {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lankytojai .skaiciai .skaiciukai {
+    width: 216px;
+    height: 132px;
+}
+
+.lankytojai .skaiciai .skaiciukai h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 120%;
+    background: var(--gradientas, linear-gradient(180deg, #00D4E4 -40.5%, #1F59EE 97.28%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.lankytojai .skaiciai .skaiciukai h4 {
+    color: #333;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.lankytojai .skaiciai .skaiciukai p {
+    color: #888;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+}
+
+.lankytojai .intersss {
+    z-index: 50;
+    position: absolute;
+}

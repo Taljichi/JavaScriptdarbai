@@ -289,7 +289,7 @@ nav ul li a {
     align-items: flex-start;
     gap: 10px;
     border-radius: 24px;
-    border: 2px solid var(--gradientas, #00D4E4);
+    border: 2px solid var(--gradientas, #1F59EE);
 }
 
 .lankytojai {

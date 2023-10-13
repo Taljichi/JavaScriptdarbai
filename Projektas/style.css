@@ -44,7 +44,7 @@ SLIDERS STYLE
 */
 
 .home-page .sliders {
-    padding: 24px;
+    padding-top: 24px;
 }
 
 .home-page .progress-bar {
@@ -65,9 +65,10 @@ SLIDERS STYLE
 
     .home-page .fraction {
         position: absolute;
+        color: black;
         left: 300px;
-        top: -10px;
-        }
+        top: 530px;
+}
 
 /* =====================================
 NAVIGATION STYLE
@@ -81,6 +82,7 @@ NAVIGATION STYLE
     padding: 20px 80px;
     height: 72px;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 .navbar ul li {

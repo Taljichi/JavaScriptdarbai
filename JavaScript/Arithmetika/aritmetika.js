@@ -88,3 +88,26 @@
 //   };
 
 //   console.log(zmogus);
+
+// let z = 58;
+
+// console.log("z =", 58);
+// console.log("5 + 8 =", Math.floor(5) + (z % 10));
+
+// let x = 58;
+// let z = Math.floor(5) + (x % 10);
+// console.log(z);
+
+
+
+
+// function skaicius() {
+//     return Math.pow(13, 1);
+// }
+// function skaicius2() {
+//     return Math.sqrt(169);
+// }
+// let rezultatas = skaicius();
+// let rezultatas2 = skaicius2();
+// console.log(rezultatas);
+// console.log(rezultatas2);

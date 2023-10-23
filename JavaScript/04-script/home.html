@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Algos skaiciuokle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        #skaiciuokle {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            max-width: 380px;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="skaiciuokle">
+        <h2>Algos skaiciuokle</h2>
+        <label for="bruto">Bruto pajamos:</label>
+        <input type="number" id="bruto" placeholder="Iveskite bruto pajamas"><br><br>
+
+        <button onclick="apskaiciuoti()">Apskaiciuoti</button><br><br>
+
+        <p id="rezultatas"></p>
+    </div>
+
+    <script>
+        function apskaiciuoti() {
+            const pajamos = parseFloat(document.getElementById("bruto").value);
+
+            if (isNaN(pajamos) || pajamos < 0) {
+                alert("Klaida.");
+                return;
+            }
+
+            let npd = 625;
+
+            if (pajamos > 1926) {
+                npd = 400 - (0.18 * (pajamos - 642));
+            } else if (pajamos > 840) {
+                npd = 625 - (0.42 * (pajamos - 840));
+            }
+            let tarifas = ((pajamos - npd) * 0.2);
+            let socd = (pajamos * 0.195);
+            let alga = (pajamos - (tarifas + socd)).toFixed(2);
+
+            document.getElementById("rezultatas").innerHTML = `Grynosios pajamos: $${alga}`;
+        }
+    </script>
+</body>
+
+</html>

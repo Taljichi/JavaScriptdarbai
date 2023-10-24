@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    form {
+        margin: 20px auto;
+        max-width: 300px;
+    }
+
+    label, select, input, button {
+        display: block;
+        margin: 10px 0;
+    }
+
+    select, input {
+        width: 100%;
+    }
+
+    button {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+</style>
+
+
+<body>
+    <h1>Stick heigh calculator</h1>
+
+    <form id="calculator">
+        <label for="style">Select style:</label>
+        <select id="style">
+            <option value="freestyle">freestyle</option>
+            <option value="classical">Classic</option>
+            <option value="nordicwalk">Nordwalk</option>
+        </select>
+        <label for="height">Person's height (in cm)</label>
+        <input type="number" id="height" step="1">
+
+        <button type="button" id="button">Calculate stick Height</button>
+    </form>
+
+    <p>Recommend Stick Height: <span id="stickHeight"></span> cm</p>
+
+    <script>
+        document.getElementById('button').addEventListener('click', function () {
+
+            const style = document.getElementById('style').value;
+
+            const heightInput = document.getElementById('height');
+
+            const stickHeightOutput = document.getElementById('stickHeight');
+
+
+            if(heightInput.value) {
+                const height = heightInput.value;
+                let RecommendStickHeight;
+
+                if (style === 'freestyle') {
+                    RecommendStickHeight = height * 0.9;
+                } else if (style === 'classical') {
+                    RecommendStickHeight = height * 0.85;
+                } else if(style === 'nordicwalk'){
+                    RecommendStickHeight = height * 0.65;
+                }
+
+                stickHeightOutput.textContent = RecommendStickHeight.toFixed(2)
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>

@@ -305,3 +305,269 @@
 // } else {
 //     console.log('Antro studento vidurkis didesnis', studentas2.vardas , studentas2.pavarde);
 // }
+
+
+// ------------------------------------ uzduotys 9
+
+// let studentas = {
+//     vardas_pavarde: 'Tomas Tomauskas',
+//     pazymiai: [7, 7, 8, 7, 9, 8, 8],
+//     vidurkis: function() {
+//         let suma = 0;
+//         for (const paz of this.pazymiai) {
+//             suma += paz;
+//         }
+//         return suma / this.pazymiai.length;
+//     }
+// };
+
+// console.log('STUDENTAS', studentas, '\n');
+// console.log('Jo pazymiai', studentas.pazymiai, '\n');
+// console.log('Pazymiu vidurkis', studentas.vidurkis().toFixed(1));
+
+// ------------------------------------ uzduotys 10
+
+// let preke = {
+//     pavadinimas: 'piestukas',
+//     kodas: 'ASFSDG458485',
+//     kaina: 2.99,
+//     kiekis_sandelyje: 451,
+//     pardavus: function() {
+//         console.log('pardavus preke galetume uzdirbti:', (this.kaina * this.kiekis_sandelyje));
+//     }
+// };
+
+// console.log('preke: ', preke, '\n');
+// preke.pardavus();
+
+// let miestas = {
+//     pavadinimas: 'Vilnius',
+//     gyventoju: 600000,
+//     Informacija: function() {
+//         console.log('Miesto pavadinimas:', this.pavadinimas);
+//         console.log('Gyventojų skaičius:', this.gyventoju);
+//     },
+//     keisti: function(naujas) {
+//         this.gyventoju = naujas;
+//         console.log('Atnaujintas gyventojų skaičius:', this.gyventoju);
+//     }
+// };
+
+// miestas.Informacija();
+// miestas.keisti(700000);
+
+
+// const knygos = [
+//     {
+//         pavadinimas: "Ponas Bovary",
+//         autorius: "Gustavas Flaubertas",
+//         isleidimoMetai: 1857
+//     },
+//     {
+//         pavadinimas: "Didysis Getsbis",
+//         autorius: "F. Scott Fitzgerald",
+//         isleidimoMetai: 1925
+//     },
+//     {
+//         pavadinimas: "Mažasis princas",
+//         autorius: "Antoine de Saint-Exupéry",
+//         isleidimoMetai: 1943
+//     }
+// ];
+
+// console.log('Pavadinimas: ' + knygos[0].pavadinimas);
+// console.log('Autorius: ' + knygos[0].autorius);
+// console.log('Isleidimo metai: ' + knygos[0].isleidimoMetai);
+
+// console.log('Pavadinimas: ' + knygos[1].pavadinimas);
+
+// Sukurkime prekių objektų masyvą
+// const prekes = [
+//     {
+//         pavadinimas: "Televizorius",
+//         kaina: 599.99,
+//         tipas: "LED",
+//         dydis: "42 colių"
+//     },
+//     {
+//         pavadinimas: "Mobilus telefonas",
+//         kaina: 299.99,
+//         tipas: "Smartphone",
+//         gamintojas: "Samsung"
+//     },
+//     {
+//         pavadinimas: "Žaislų rinkinys",
+//         kaina: 49.99,
+//         amzius: "3+",
+//         kiekis: 100
+//     }
+// ];
+
+// prekes.forEach(function (preke, indeksas) {
+//     console.log("Prekė " + (indeksas + 1) + ":");
+//     console.log("Pavadinimas: " + preke.pavadinimas);
+//     console.log("Kaina: " + preke.kaina + " EUR");
+
+//     if (preke.tipas) {
+//         console.log("Tipas: " + preke.tipas);
+//     }
+//     if (preke.dydis) {
+//         console.log("Dydis: " + preke.dydis);
+//     }
+//     if (preke.gamintojas) {
+//         console.log("Gamintojas: " + preke.gamintojas);
+//     }
+//     if (preke.amzius) {
+//         console.log("Amžius: " + preke.amzius);
+//     }
+//     if (preke.kiekis) {
+//         console.log("Kiekis: " + preke.kiekis);
+//     }
+
+//     console.log("------------");
+// });
+
+
+// const automobiliai = [
+//     {
+//         pavadinimas: "Volkswagen Golf",
+//         gamybosMetai: 2019
+//     },
+//     {
+//         pavadinimas: "Toyota Corolla",
+//         gamybosMetai: 2020
+//     },
+//     {
+//         pavadinimas: "Ford Focus",
+//         gamybosMetai: 2018
+//     }
+// ];
+
+// let dabartiniaiMetai = new Date().getFullYear();
+
+// automobiliai.forEach(function(automobilis, indeksas) {
+//     let amzius = dabartiniaiMetai - automobilis.gamybosMetai;
+//     console.log("Automobilis " + (indeksas + 1) + ":");
+//     console.log("Pavadinimas: " + automobilis.pavadinimas);
+//     console.log("Gamybos metai: " + automobilis.gamybosMetai);
+//     console.log("Amžius: " + amzius + " metai");
+//     console.log("------------");
+// });
+
+// Sukurkime studentų objektų masyvą
+// const studentai = [
+//     {
+//         vardas: "Jonas",
+//         pavarde: "Jonaitis",
+//         amzius: 21,
+//         pazymiai: [8, 7, 9, 6, 8],
+//         programa: "Informatika",
+//         kursas: 3
+//     },
+//     {
+//         vardas: "Marius",
+//         pavarde: "Mariusonis",
+//         amzius: 20,
+//         pazymiai: [9, 9, 10, 8, 7],
+//         programa: "Ekonomika",
+//         kursas: 2
+//     },
+//     {
+//         vardas: "Laura",
+//         pavarde: "Lauraitė",
+//         amzius: 22,
+//         pazymiai: [7, 8, 6, 9, 8],
+//         programa: "Medicina",
+//         kursas: 4
+//     }
+// ];
+
+
+
+// var bendrasVidurkis = 0;
+// studentai.forEach(function(studentas, indeksas) {
+//     console.log("Studentas " + (indeksas + 1) + ":");
+//     console.log("Vardas ir pavardė: " + studentas.vardas + " " + studentas.pavarde);
+//     console.log("Amžius: " + studentas.amzius);
+//     console.log("Studijų programa: " + studentas.programa);
+//     console.log("Kursas: " + studentas.kursas);
+
+//     console.log("Pažymiai:");
+//     console.log(studentas.pazymiai.join(', '));
+    
+
+//     var pazymiuVidurkis = studentas.pazymiai.reduce(function(a, b) { return a + b; }) / studentas.pazymiai.length;
+//     console.log("Pažymių vidurkis: " + pazymiuVidurkis);
+    
+//     bendrasVidurkis += pazymiuVidurkis;
+    
+//     console.log("------------");
+// });
+
+// var bendrasVisuStudentuVidurkis = bendrasVidurkis / studentai.length;
+// console.log("Bendras visų studentų pažymių vidurkis: " + bendrasVisuStudentuVidurkis);
+
+// Sukurkime parduotuvės objektą
+var parduotuve = {
+    pavadinimas: "Maxima",
+    adresas: "Gatvė 123, Miestas",
+    darbuotojuKiekis: 10,
+    prekes: [
+        {
+            pavadinimas: "Obuoliai",
+            kodas: "A123",
+            kaina: 0.5,
+            savikaina: 0.3,
+            turimasKiekis: 100
+        },
+        {
+            pavadinimas: "Bulvės",
+            kodas: "B456",
+            kaina: 0.3,
+            savikaina: 0.2,
+            turimasKiekis: 200
+        },
+        {
+            pavadinimas: "Pienas",
+            kodas: "C789",
+            kaina: 1.2,
+            savikaina: 0.9,
+            turimasKiekis: 50
+        }
+    ]
+};
+
+// 
+// console.log("Parduotuvės pavadinimas: " + parduotuve.pavadinimas);
+// console.log("Adresas: " + parduotuve.adresas);
+// console.log("Darbuotojų kiekis: " + parduotuve.darbuotojuKiekis);
+// console.log("-----");
+
+// // Išveskime prekes, jų pavadinimus, kainas ir turimus kiekius
+// console.log("Prekės:");
+// parduotuve.prekes.forEach(function(preke) {
+//     console.log("Pavadinimas: " + preke.pavadinimas);
+//     console.log("Kaina: " + preke.kaina + " EUR");
+//     console.log("Turimas kiekis: " + preke.turimasKiekis);
+//     console.log("-----");
+// });
+
+// // Paskaičiuokime bendrą visų prekių kiekį parduotuvėje
+// var bendrasKiekis = 0;
+// parduotuve.prekes.forEach(function(preke) {
+//     bendrasKiekis += preke.turimasKiekis;
+// });
+
+// console.log("Bendras visų prekių kiekis parduotuvėje: " + bendrasKiekis);
+
+// // Suraskime prekę su daugiausiai ir mažiausiai turimais kiekiais
+// var daugiausiaiTurimaPreke = parduotuve.prekes.reduce(function(a, b) {
+//     return a.turimasKiekis > b.turimasKiekis ? a : b;
+// });
+
+// var maziausiaiTurimaPreke = parduotuve.prekes.reduce(function(a, b) {
+//     return a.turimasKiekis < b.turimasKiekis ? a : b;
+// });
+
+// console.log("Prekė su daugiausiai turimais kiekiais: " + daugiausiaiTurimaPreke.pavadinimas);
+// console.log("Prekė su mažiausiai turimais kiekiais: " + maziausiaiTurimaPreke.pavadinimas);

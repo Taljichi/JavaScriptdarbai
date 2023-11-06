@@ -508,34 +508,34 @@
 // console.log("Bendras visų studentų pažymių vidurkis: " + bendrasVisuStudentuVidurkis);
 
 // Sukurkime parduotuvės objektą
-var parduotuve = {
-    pavadinimas: "Maxima",
-    adresas: "Gatvė 123, Miestas",
-    darbuotojuKiekis: 10,
-    prekes: [
-        {
-            pavadinimas: "Obuoliai",
-            kodas: "A123",
-            kaina: 0.5,
-            savikaina: 0.3,
-            turimasKiekis: 100
-        },
-        {
-            pavadinimas: "Bulvės",
-            kodas: "B456",
-            kaina: 0.3,
-            savikaina: 0.2,
-            turimasKiekis: 200
-        },
-        {
-            pavadinimas: "Pienas",
-            kodas: "C789",
-            kaina: 1.2,
-            savikaina: 0.9,
-            turimasKiekis: 50
-        }
-    ]
-};
+// var parduotuve = {
+//     pavadinimas: "Maxima",
+//     adresas: "Gatvė 123, Miestas",
+//     darbuotojuKiekis: 10,
+//     prekes: [
+//         {
+//             pavadinimas: "Obuoliai",
+//             kodas: "A123",
+//             kaina: 0.5,
+//             savikaina: 0.3,
+//             turimasKiekis: 100
+//         },
+//         {
+//             pavadinimas: "Bulvės",
+//             kodas: "B456",
+//             kaina: 0.3,
+//             savikaina: 0.2,
+//             turimasKiekis: 200
+//         },
+//         {
+//             pavadinimas: "Pienas",
+//             kodas: "C789",
+//             kaina: 1.2,
+//             savikaina: 0.9,
+//             turimasKiekis: 50
+//         }
+//     ]
+// };
 
 // 
 // console.log("Parduotuvės pavadinimas: " + parduotuve.pavadinimas);

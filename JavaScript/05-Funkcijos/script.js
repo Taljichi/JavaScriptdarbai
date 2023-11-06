@@ -217,6 +217,9 @@
 
 // ======================== 14 uzduotys
 
+//   const masyvas1 = [2, 4, 6, 8, 10];
+//   const masyvas2 = [3, 5, 7, 9, 11];
+
 // function spausdinti(masyvas) {
 //     for (let i = 0; i < masyvas.length; i++) {
 //       const skaicius = masyvas[i];
@@ -225,11 +228,7 @@
 //       console.log(`Skaicius: ${skaicius}, Kvadratas: ${kvadratas}, Dalyba is dvieju: ${dalyba}`);
 //       console.log('----------------------------')
 //     }
-//   }
-  
-//   const masyvas1 = [2, 4, 6, 8, 10];
-//   const masyvas2 = [3, 5, 7, 9, 11];
-  
+//   }  
 //   spausdinti(masyvas1);
 //   spausdinti(masyvas2);
 
@@ -285,3 +284,191 @@
 //   didziausia(masyvas2);
 //   didziausia(masyvas3);
   
+
+
+// ======================== 17 uzduotys
+
+// function grazintiSakini(sakinys) {
+//     return sakinys;
+// }
+
+// let manoSakinys = grazintiSakini("Tai yra mano norimas sakinys.");
+// console.log(manoSakinys);
+
+
+
+// ======================== 18 uzduotys
+
+// function atsitiktinisSkaicius() {
+//     return Math.random();
+// }
+
+// for (let i = 0; i < 5; i++) {
+//     let atsakymas = atsitiktinisSkaicius();
+//     console.log("Atsitiktinis skaičius:", atsakymas);
+// }
+
+
+// ======================== 19 uzduotys
+
+// function generuotiSakini(vardas, vidurkis) {
+//     return "Studentas " + vardas + " turi vidurkį " + vidurkis;
+// }
+
+// let atsakymas1 = generuotiSakini("Tomas", 8.7);
+// let atsakymas2 = generuotiSakini("Laura", 9.2);
+
+// console.log(atsakymas1);
+// console.log(atsakymas2);
+
+// ======================== 20 uzduotys
+
+// function maziausiasDaliklis(sk) {
+//     for (let i = 2; i <= sk; i++) {
+//         if (sk % i === 0) {
+//             return i;
+//         }
+//     }
+//     return sk;
+// }
+// for (let i = 10; i <= 30; i++) {
+//     var maziausias = maziausiasDaliklis(i);
+//     console.log(`Mažiausias daliklis skaičiui ${i} yra ${maziausias}`);
+// }
+
+
+// ======================== 21 uzduotys
+
+// function arPirminis(sk) {
+//     if (sk <= 1) {
+//         return false;
+//     }
+//     for (let i = 2; i < sk; i++) {
+//         if (sk % i === 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// for (let i = 2; i <= 15; i++) {
+//     var pirminis = arPirminis(i);
+//     console.log(`${i} ${pirminis}`);
+// }
+
+
+// ======================== 22 uzduotys
+
+// function sudeti(sk1, sk2) {
+//     return sk1 + sk2;
+// }
+
+// function atimti(sk1, sk2) {
+//     return sk1 - sk2;
+// }
+
+// function dauginti(sk1, sk2) {
+//     return sk1 * sk2;
+// }
+
+// function generuotiAtsitiktiniusSkaicius(kiekis) {
+//     const skaiciai = [];
+//     for (let i = 0; i < kiekis; i++) {
+//         skaiciai.push(Math.floor(Math.random() * 100));
+//     }
+//     return skaiciai;
+// }
+
+// function atliktiSkaiciavimus() {
+//     const skaiciai = generuotiAtsitiktiniusSkaicius(5); 
+//     console.log("Generuoti skaičiai:", skaiciai);
+    
+//     for (let i = 0; i < skaiciai.length - 1; i++) {
+//         const sk1 = skaiciai[i];
+//         const sk2 = skaiciai[i + 1];
+        
+//         const suma = sudeti(sk1, sk2);
+//         console.log(`${sk1} + ${sk2} = ${suma}`);
+        
+//         const skirtumas = atimti(sk1, sk2);
+//         console.log(`${sk1} - ${sk2} = ${skirtumas}`);
+        
+//         const sandauga = dauginti(sk1, sk2);
+//         console.log(`${sk1} * ${sk2} = ${sandauga}`);
+//     }
+// }
+
+// atliktiSkaiciavimus();
+
+
+// ======================== 23 uzduotys
+
+// function rastiSuma(skaičiųMasyvas) {
+//     let suma = 0;
+//     for (let i = 0; i < skaičiųMasyvas.length; i++) {
+//         suma += skaičiųMasyvas[i];
+//     }
+//     return suma;
+// }
+
+// const masyvas1 = [2, 4, 6, 8, 10];
+// const masyvas2 = [1, 3, 5, 7, 9];
+
+// const suma1 = rastiSuma(masyvas1);
+// const suma2 = rastiSuma(masyvas2);
+
+// console.log("Suma masyvo 1:", suma1);
+// console.log("Suma masyvo 2:", suma2);
+
+// if (suma1 > suma2) {
+//     console.log("Masyvo 1 suma yra didesnė.");
+// } else if (suma2 > suma1) {
+//     console.log("Masyvo 2 suma yra didesnė.");
+// } else {
+//     console.log("Sumos yra lygios.");
+// }
+
+
+// ======================== 24 uzduotys
+
+// function ilgiausiasZodis(zodziuMasyvas) {
+//     let ilgiausias = "";
+//     for (let i = 0; i < zodziuMasyvas.length; i++) {
+//         if (zodziuMasyvas[i].length > ilgiausias.length) {
+//             ilgiausias = zodziuMasyvas[i];
+//         }
+//     }
+//     return ilgiausias;
+// }
+
+// const zodziai = ["katinas", "šuo", "gyvatele", "pingvinas", "eziukas"];
+
+// const ilgiausias = ilgiausiasZodis(zodziai);
+
+// console.log("Ilgiausias žodis:", ilgiausias);
+// console.log("Šio žodžio ilgis:", ilgiausias.length);
+
+
+// ======================== 25 uzduotys
+
+// function arVisiTeigiami(pazymiuMasyvas) {
+//     for (let i = 0; i < pazymiuMasyvas.length; i++) {
+//         if (pazymiuMasyvas[i] < 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// function konvertuotiIteksta(atsakymas) {
+//     return atsakymas ? "visi studento pažymiai teigiami" : "studentas turi bent vieną neigiamą pažymį";
+// }
+
+// const pazymiai1 = [8, 9, 7, 10];
+// const pazymiai2 = [8, -2, 9, 7, 10];
+
+
+// const atsakymas1 = arVisiTeigiami(pazymiai1);
+// const atsakymas2 = arVisiTeigiami(pazymiai2);
+
+// console.log(konvertuotiIteksta(atsakymas1));
+// console.log(konvertuotiIteksta(atsakymas2));

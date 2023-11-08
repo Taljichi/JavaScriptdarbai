@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medienos skaičiuoklė</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Plus+Jakarta+Sans:wght@300;400;700&family=Roboto&family=Source+Code+Pro:wght@400;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="block-wrapper">
+        <h1>Medienos skaičiuoklė</h1>
+    </header>
+    <div class="info-wrapper block-wrapper">
+        <h2>Medienos lentų skaičiavimas</h2>
+        <div class="input-wrapper">
+            <label for="board-length">Lentos ilgis (m):</label>
+            <input id="board-length" type="number" min="0" step="0.01" value="0">
+        </div>
+        <div class="input-wrapper">
+            <label for="board-width">Lentos plotis (m):</label>
+            <input id="board-width" type="number" min="0" step="0.01" value="0">
+        </div>
+        <div class="input-wrapper">
+            <label for="board-depth">Lentos gylis (m):</label>
+            <input id="board-depth" type="number" min="0" step="0.01" value="0">
+        </div>
+        <div class="input-wrapper">
+            <label for="board-quantity">Kiekis:</label>
+            <input id="board-quantity" type="number" min="0" step="1" value="0">
+        </div>
+        <button id="calculate">Skaičiuoti</button>
+        <button id="reset">Viską iš naujo</button>
+    </div>
+    <div class="calculation-wrapper block-wrapper">
+        <h2>Rezultatai</h2>
+        <div id="results">
+            <p>Kol kas nieko nėra.</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

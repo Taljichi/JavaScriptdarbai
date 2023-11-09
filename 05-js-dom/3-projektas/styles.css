@@ -45,3 +45,11 @@ textarea {
 #sesioliktas .skirtukas#antras-skirtukas {
     display: none;
 }
+
+#septynioliktas #perjungti-tekstas {
+    display: none;
+}
+
+#astuonioliktas #kitas-perjungti-tekstas {
+    display: none;
+}

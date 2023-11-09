@@ -2,6 +2,8 @@ document.getElementById('pirma-antraste').innerHTML = 'Naujas pirmos antrastes t
 document.getElementById('pirmas-paragrafas').innerHTML = 'Naujas pakeistas pirmo paragrafo tekstas';
 
 
+//  Antras
+
 console.log('ANTRAS DIV');
 
 let tekstasIsParagrafo = document.getElementById('paragrafo-tekstas').innerHTML;
@@ -11,6 +13,8 @@ let tekstasIsParagrafo2 = document.getElementById('paragrafo-tekstas').innerText
 console.log('paimtas su innerText tekstas:', tekstasIsParagrafo2);
 
 console.log();
+
+// Trecias
 
 console.log('TRECIAS DIV');
 
@@ -99,11 +103,20 @@ spalvosPasirinkimas.oninput = function () {
     divKeitimui.style.backgroundColor = this.value;
 }
 
+let spalvosZodziai = document.getElementById('zodzio-spalvos');
+
+spalvosZodziai.oninput = function () {
+    divKeitimui.style.color = this.value;
+}
+
+
 let tekstasDivui = document.getElementById('tekstas-divui');
 
 tekstasDivui.oninput = function() {
     divKeitimui.innerHTML = this.value;
 }
+
+
 
 // keturioliktas
 
@@ -139,6 +152,25 @@ function ilgiausiasZodis() {
     <p>Jo ilgis: ${ilgiausias.length} simboliu.</p>`;
 }
 
+
+// function trumpiausiasZodis() {
+//     let tekstas = penkioliktoTekstas.value;
+//     let zodziai = tekstas.trim().split(' ');
+
+//     let trumpiausias = '';
+
+//     for (let zodis of zodziai) {
+//         if (zodis.length > trumpiausias.length) {
+//             trumpiausias = zodis;
+//         }
+//     }
+
+//     document.getElementById('penkiolikto-atsakymai').innerHTML = 
+//     `<p>Trumpiausias zodis: ${trumpiausias}</p>
+//     <p>Jo ilgis: ${trumpiausias.length} simboliu.</p>`;
+// }
+
+
 // Sesioliktas
 
 let pirmoSkirtukoTurinys = document.getElementById('pirmas-skirtukas');
@@ -152,4 +184,39 @@ function pirmasSkirtukas(){
 function antrasSkirtukas(){
     antroSkirtukoTurinys.style.display = 'block';
     pirmoSkirtukoTurinys.style.display = 'none';
+}
+
+// Septynioliktas div
+
+let perjungtiMygtukas = document.getElementById('perjungti-mygtukas');
+let perjungtiTekstas = document.getElementById('perjungti-tekstas');
+
+perjungtiMygtukas.onclick = function() {
+    if (this.innerText == "Rodyti") {
+        this.innerText = "Nerodyti";
+        perjungtiTekstas.style.display = "block";
+    } else {
+        this.innerText = "Rodyti";
+        perjungtiTekstas.style.display = "none";
+    }
+}
+
+// astuonioliktas
+
+let kitasPerjungtiTekstas = document.getElementById('kitas-perjungti-tekstas');
+
+document.getElementById('kitas-perjungti-mygtukas').onclick = function() {
+    if (kitasPerjungtiTekstas.style.display == 'block') {
+        this.innerText = 'Rodyti';
+        kitasPerjungtiTekstas.style.display = 'none';
+    } else {
+        this.innerText = 'Nerodyti';
+        kitasPerjungtiTekstas.style.display = 'block';
+    }
+}
+
+// devynioliktas
+
+document.getElementById('devyniolikto-tekstas').onclick = function () {
+    this.style.display = 'none';
 }

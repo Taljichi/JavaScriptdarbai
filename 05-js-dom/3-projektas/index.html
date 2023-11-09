@@ -138,6 +138,15 @@
                 <option value="red">Raudona</option>
                 <option value="green">Zalia</option>
             </select>
+           </div>
+           <div class="parametras">
+            <p>Zodzio spalva:</p>
+            <select id="zodzio-spalvos">
+                <option value="red">Raudona</option>
+                <option value="blue">Melyna</option>
+                <option value="black">Juoda</option>
+                <option value="green">Zalia</option>
+            </select>
            </div> 
            <div id="parametras">
             <p>Tekstas per viduri:</p>
@@ -161,6 +170,7 @@
                 <button onclick="pridetiZodi('zodziu-inputas', 'Doggo')">Doggo</button>
             </p>
         </div>
+<!--  -->
         <div id="penkioliktas">
             <p>Jusu surinktas tekstas:</p>
             <textarea id="penkiolikto-tekstas" rows="10"></textarea>
@@ -168,10 +178,13 @@
             <p>
                 <button onclick="zodziuKiekis()">Zodziu kiekis</button>
                 <button onclick="ilgiausiasZodis()">Ilgiausias zodis</button>
+                <button onclick="trumpiausiasZodis()">Trumpiausias zodis</button>
             </p>
 
             <div id="penkiolikto-atsakymai"></div>
         </div>
+
+        <!--  -->
 
         <div id="sesioliktas">
             <p>
@@ -186,6 +199,20 @@
             <div id="antras-skirtukas" class="skirtukas">
                 <p>antro skirtuko content</p>
             </div>
+        </div>
+
+        <div id="septynioliktas">
+            <button id="perjungti-mygtukas">Rodyti</button>
+            <p id="perjungti-tekstas">Tekstas</p>
+        </div>
+
+        <div id="astuonioliktas">
+            <button id="kitas-perjungti-mygtukas">Rodyti</button>
+            <button id="kitas-perjungti-tekstas">Tekstas</button>
+        </div>
+
+        <div id="devynioliktas">
+            <p id="devyniolikto-tekstas">Slepti sita teksta ant paspaudimo</p>
         </div>
 
     <script src="scripts.js"></script>

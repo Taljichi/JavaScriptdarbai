@@ -4,3 +4,5 @@ console.log('išbandyti savo jėgas');
 console.log('***')
 console.log('*','*')
 console.log('***')
+
+console.log(null || 'string')

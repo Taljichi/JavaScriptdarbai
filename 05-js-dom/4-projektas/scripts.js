@@ -8,6 +8,19 @@ let calculationSpan = document.getElementById('calculation');
 
 let history = [];
 
+function onActionClick(clickedAction) {
+    if (input.value !== '' && !isLastCharAnAction()) {
+        input.value += ' ' + clickedAction + ' ';
+    } else {
+        input.value = input.value.slice(0, -2) + clickedAction + ' ';
+    }
+}
+
+function isLastCharAnAction() {
+    const lastChar = input.value.slice(-1);
+    return ['+', '-', '*', '/'].includes(lastChar);
+}
+
 function onNumberClick(number) {
     if (number === '.' && input.value.includes('.')) {
         return;
@@ -15,31 +28,13 @@ function onNumberClick(number) {
     if (input.value === '0' && number !== '0') {
         input.value = number;
     } else {
-        input.value += number;
-    }
-}
-
-
-function onActionClick(clickedAction) {
-    let lastInput = input.value.trim();
-    
-    if (lastInput.length > 0) {
-        let lastChar = lastInput.slice(-1);
-
-        if (['+', '-', '*', '/'].includes(lastChar)) {
-            input.value = input.value.slice(0, -1) + clickedAction;
+        if (isLastCharAnAction()) {
+            input.value = input.value.slice(0, -2) + number;
         } else {
-            input.value += clickedAction;
-            action = clickedAction;
+            input.value += number;
         }
     }
 }
-
-
-
-
-
-
 
 
 function onCountClick() {
@@ -55,8 +50,6 @@ function onCountClick() {
 
     addToHistory();
 }
-
-
 
 function calculateAnswer() {
     switch (action) {
@@ -87,8 +80,11 @@ function addToHistory() {
 }
 
 document.getElementById('show-history').onclick = function() {
-    // console.log('veikia');
+    //  console.log('veikia');
     let formatted = history.map(x => `<p>${x.firstNumber} ${x.action} ${x.secondNumber} = ${x.answer}</p>`);
     let historyBlock = document.querySelector('.calculator .history-items');
     historyBlock.innerHTML = formatted.join('');
 }
+
+
+

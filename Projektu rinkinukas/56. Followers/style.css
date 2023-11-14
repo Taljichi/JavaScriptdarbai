@@ -48,3 +48,11 @@ body {
 .fa-youtube {
   color: rgb(255, 0, 0);
 }
+
+#pirma, #antra {
+  display: none;
+}
+
+section {
+text-align: center;
+}

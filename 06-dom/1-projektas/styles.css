@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+header { 
+    height: 90px;
+    background-color: blue;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 200px;
+    height: 90px;
+    background-color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+}
+
+header .nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.prices .container h1 {
+    text-align: center;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.prices .cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices .cards .card {
+    width: 32%;
+}
+
+.prices .cards .card img {
+    width: 100%;
+}
+
+#nuoma, #pirkimas {
+    display: none;
+}

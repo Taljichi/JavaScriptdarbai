@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    margin-right: 5px;
+  }
+  
+  #content {
+    padding: 20px;
+    background-color: #ecf0f1;
+    display: none;
+  }
+  
+  .hidden-content {
+    display: none;
+  }
+  

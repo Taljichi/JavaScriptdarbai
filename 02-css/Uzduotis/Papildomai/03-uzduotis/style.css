@@ -85,3 +85,57 @@ bottom: 126px;
     bottom: 72px;
 }
 
+/* ===================================== */
+
+.navigation {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.navigation .logo {
+    width: 200px;
+    height: 80px ;
+    background-image: url(https://picsum.photos/350/200/);
+
+}
+
+.navigation .linkai ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation .linkai ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 760px) {
+    header .navigation {
+        display: none;
+    }
+}
+
+@media (min-width: 760px){
+    .burger {
+        display:none
+    }
+}
+
+.burger {
+    padding: 20px;
+}
+
+.burger .Line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}

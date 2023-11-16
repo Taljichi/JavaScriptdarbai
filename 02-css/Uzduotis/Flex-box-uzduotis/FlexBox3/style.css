@@ -70,3 +70,27 @@ h3, p {
     padding: 20px;
     justify-content: space-between;
 }
+
+.nuorodos ul li {
+    position: relative;
+}
+
+.dropdownas li a {
+    color: black;
+}
+
+  .dropdownas {
+    display: none;
+    min-height: 100px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    transform:  translate(0, 100%);
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .show {
+    display: block !important;
+  }

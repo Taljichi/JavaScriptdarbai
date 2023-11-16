@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  .img-fluid {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+  }
+
+  header .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .logo {
+    width: 200px;
+    height: 80px;
+    background-color: #fff;
+  }
+
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+  }
+
+  header ul a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  header .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  header.mobile {
+    height: 100vh;
+  }
+
+  section.hero {
+    height: 400px;
+    background-color: red;
+  }
+
+  section.hero h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  section.hero {
+    display: flex;
+    align-items: center;
+  }
+
+  section.cards {
+    padding: 60px 0;
+  }
+
+  section.cards .col {
+    width: 23%;
+  }
+
+  section.cards .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+
+  section.cards .container .card img {
+    border-radius: 15px 15px 0 0;
+  }
+
+  .card .card-body {
+    padding: 20px;
+  }
+
+  footer {
+    height: 400px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+  }
+
+  footer h1 {
+    text-align: left;
+  }
+
+  .burger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .burger .line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  ul.mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .burger {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    header .navigation {
+      display: none;
+    }
+
+    .container {
+      padding: 0 20px;
+    }
+  }
+
+.navigation ul li {
+    position: relative;
+}
+.dropdown-content li a {
+    color: black;
+}
+
+  .dropdown-content {
+    display: none;
+    min-height: 150px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    transform:  translate(0, 100%);
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    width: 125px;
+  }

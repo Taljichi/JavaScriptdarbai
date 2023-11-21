@@ -1,0 +1,80 @@
+body {
+    background-color: #f8f8f8;
+}
+
+.page-content {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.page-content h1 {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 20px 30px;
+    margin: 0;
+}
+
+.payments-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.payments-wrapper th, .payments-wrapper td {
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+    text-align: left;
+}
+
+.payments-wrapper .income {
+    color: green;
+}
+
+.payments-wrapper .expense {
+    color: red;
+}
+
+.balance-wrapper {
+    padding: 20px 30px;
+    background-color: #ededed;
+}
+
+.balance-wrapper h3 {
+    margin: 0;
+}
+
+.balance-wrapper span.positive {
+    color: green;
+}
+
+.balance-wrapper span.negative {
+    color: red;
+}
+
+#totalBalance {
+    font-weight: bold;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+
+
+.payments-wrapper .positive {
+    color: green;
+}
+
+.payments-wrapper .negative {
+    color: red;
+}
+
+.payments-wrapper .income {
+    font-weight: bold; 
+}
+
+.payments-wrapper .expense {
+    font-weight: bold; 
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container" title="Pirmas">
+            <h2>Keiciasi teksto spalva paspaudus</h2>
+            <div class="tekstas">
+                <p id="tekst">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non suscipit neque ipsum error ipsam cupiditate?</p>
+            </div>
+            <div class="mygtukas">
+                <button class="btn" onclick="spalvos()">Kita Spalva</button>
+            </div>
+    </div>
+
+    <div class="container" title="Antras">
+        <div id="langelis">
+            <h2 id="h2" onclick="dydis()">SPAUSK MANE</h2>
+        </div>
+    </div>
+
+    <div class="container" title="Trecias">
+        <h2>Keicia Pirmo elemento turini</h2>
+        <div id="mygtukas2">
+            <button class="btn" onclick="turinys()">Keisti teksta</button>
+        </div>
+    </div>
+
+    <div class="container" title="Ketvirtas">
+        <h2>Keisti teksto dydi pirmam</h2>
+        <div id="mygtukas2">
+            <button class="btn2">Keisti teksto dydi</button>
+        </div>
+    </div>
+
+    <div class="container" title="Penktas">
+        <h2> Keisti input lauka</h2>
+        <div id="input">
+            <input type="text" placeholder="Tekstas" id="inputas">
+            <button onclick="keisti()">Keisti</button>
+        </div>
+    </div>
+
+    <div class="container" title="Sestas">
+            <h2>Dynamiskas sarasas</h2>
+            <div class="dynamiskas">
+                <ul id="sarasas"></ul>
+            <button onclick="pridetiElementa()">Pridėti elementą</button>
+            </div>
+    </div>
+
+    <div class="container" title="Septintas">
+        <form id="manoForma">
+            <label for="inputTekstas">Įveskite tekstą:</label>
+            <input type="text" id="inputTekstas" name="inputTekstas">
+            <button type="button" onclick="rodytiReiksme()">Rodyti reikšmę</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

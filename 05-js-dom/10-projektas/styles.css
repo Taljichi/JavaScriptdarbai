@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.container {
+    margin: 50px auto;
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+}
+
+.container h2 {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 20px 30px;
+    margin: 0;
+    text-align: center;
+}
+
+.container .tekstas {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #e3e3e3
+}
+
+.container .tekstas p {
+
+}
+
+.container .mygtukas {
+    text-align: center;
+    padding: 25px;
+}
+
+.container #mygtukas2 {
+    text-align: center;
+    padding: 25px;
+}
+
+#input {
+    text-align: center;
+    padding: 25px;
+}
+
+#sarasas {
+    text-align: center;
+    padding: 25px;
+    list-style: decimal;
+}
+
+.dynamiskas {
+    text-align: center;
+}
+
+
+#manoForma {
+    padding: 25px;
+    text-align: center;
+}

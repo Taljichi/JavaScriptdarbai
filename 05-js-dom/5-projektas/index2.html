@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pajamų / išlaidų skaičiuoklė</title>
+<style>
+    /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: #f8f8f8;
+}
+
+.page-content {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.page-content h1 {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 20px 30px;
+    margin: 0;
+}
+
+.payments-wrapper .item-wrapper:not(:last-child) { 
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.payments-wrapper .item-wrapper p {
+    margin: 2px 0;
+}
+
+.payments-wrapper .item-wrapper {
+    padding: 15px 30px;
+}
+
+.payments-wrapper .item-wrapper p.id, 
+.payments-wrapper .item-wrapper p.when {
+    font-size: 12px;
+}
+
+.payments-wrapper .item-wrapper p.type {
+    font-size: 16px;
+}
+
+.payments-wrapper .item-wrapper p.amount {
+    font-size: 20px;
+}
+
+.payments-wrapper .item-wrapper p.income {
+    color: green;
+}
+
+.payments-wrapper .item-wrapper p.expense {
+    color: red;
+}
+
+.balance-wrapper {
+    padding: 20px 30px;
+    background-color: #ededed;
+
+}
+
+.balance-wrapper h3 {
+    margin: 0;
+}
+
+.balance-wrapper span.positive {
+    color: green;
+}
+.balance-wrapper span.negative {
+    color: red;
+}
+
+.balance-wrapper .incomes_expenses {
+    font-size: 14px;
+}
+
+.balance-wrapper .incomes_expenses .pajamos {
+    color: green;
+}
+.balance-wrapper .incomes_expenses .islaidos {
+    color: red;
+}
+
+.btn {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+    
+
+    <div class="page-content">
+        <h1>Pajamų / išlaidų skaičiuoklė</h1>
+        <div class="payments-wrapper"></div>
+        <div class="balance-wrapper"></div>
+        <form action="" >
+            <div class="">
+                <label for="">Pajamos</label>
+                <input type="radio" id="pajamos" name="choos" value="Pajamos" checked>
+                <label for="">Išlaidos</label>
+                <input type="radio" id="islaidos" name="choos" value="Islaidos">
+            </div>
+            <div class="">
+                <label for="income">Pajamos/Išlaidos</label>
+                <input type="number" id="income" placeholder="Pajamos/Išlaidos">
+            </div>
+            <a class="btn" id="addItem">Pridėti</a>
+        </form>
+    </div>
+
+    <script>
+        function load_data(data_wrapper_selector, data_array, balance_wrapper_selector) {
+        let data_wrapper = document.querySelector(data_wrapper_selector);
+        data_wrapper.innerHTML = ''; 
+        for (const item of data_array) {
+            data_wrapper.innerHTML +=  `<div class="item-wrapper">
+                                            <p class="id">ID: ${item.id}</p>
+                                            <p class="type ${item.type}">
+                                                ${item.type == 'income' ? 'Pajamos' : 'Išlaidos'}
+                                            </p>
+                                            <p class="amount ${item.type}">${item.amount} Eur.</p>
+                                            <p class="when">${item.when}</p>
+                                        </div>`;
+        }
+
+        let final_balance = calculate_balance(data_array);
+
+        let balance_wrapper = document.querySelector(balance_wrapper_selector);
+
+        balance_wrapper.innerHTML = `<h3>
+            Galutinis likutis: 
+            <span class="${final_balance > 0 ? 'positive': 'negative'}">
+                ${final_balance} Eur.
+            </span>
+            <span class="incomes_expenses">
+                (<span class="pajamos">pajamos: ${calculate_incomes(data_array)} Eur.</span>  / 
+                <span class="islaidos"> išlaidos: ${calculate_expenses(data_array)} Eur.</span>)
+            </span>
+        </h3>`;
+    };
+
+    function calculate_balance(payments_data) {
+        let sum = 0;
+        for (const item of payments_data) {
+            sum += item.amount;
+        }
+        return sum;
+    }
+
+    function calculate_incomes(payments_data){
+        let sum = 0;
+        for (const item of payments_data) {
+            // if (item.amount > 0) {}
+            if (item.type == 'income') {
+                sum += item.amount;
+            }
+        }
+        return sum;
+    }
+
+    function calculate_expenses(payments_data){
+        return payments_data.filter(item => item.type == 'expense')
+        .reduce((sum, item) => sum + item.amount, 0);
+    }
+
+    let id = 1;
+
+    let payments = [
+        {id: 1, type: 'income', amount: 900, when: '2022-10-01 10:30:24'},
+    ];
+
+    document.getElementById('addItem').addEventListener('click', function() {
+        let radios = document.getElementsByName('choos');
+        let amount = document.getElementById('income');
+        id++;
+
+        for (let i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+
+                let newPayment;
+                
+                if (radios[i].value == 'Pajamos') {
+                    newPayment = {
+                        id: id,
+                        type: 'income',
+                        amount: parseFloat(amount.value),
+                        when: new Date().toISOString(),
+                    };
+                }
+                if (radios[i].value == 'Islaidos') {
+                    newPayment = {
+                        id: id,
+                        type: 'expense',
+                        amount: parseFloat(amount.value),
+                        when: new Date().toISOString(),
+                    };
+                }
+
+                payments.push(newPayment);
+                load_data('.payments-wrapper', payments, '.balance-wrapper');
+            }
+        }
+    });
+
+    load_data('.payments-wrapper', payments, '.balance-wrapper');
+    </script>
+</body>
+</html>

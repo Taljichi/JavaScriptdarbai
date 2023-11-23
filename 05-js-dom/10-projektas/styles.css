@@ -12,6 +12,7 @@ body {
     width: 100%;
     max-width: 500px;
     background-color: white;
+    text-align: center;
 }
 
 .container h2 {
@@ -60,4 +61,15 @@ body {
 #manoForma {
     padding: 25px;
     text-align: center;
+}
+
+.langas {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px;
+}
+
+.aktyvus {
+    background-color: #f0f0f0;
 }

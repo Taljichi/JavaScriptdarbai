@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+
     <div class="container" title="Pirmas">
-            <h2>Keiciasi teksto spalva paspaudus</h2>
-            <div class="tekstas">
-                <p id="tekst">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non suscipit neque ipsum error ipsam cupiditate?</p>
-            </div>
-            <div class="mygtukas">
-                <button class="btn" onclick="spalvos()">Kita Spalva</button>
-            </div>
+        <h2>Keiciasi teksto spalva paspaudus</h2>
+        <div class="tekstas">
+            <p id="tekst">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non suscipit neque ipsum error ipsam
+                cupiditate?</p>
+        </div>
+        <div class="mygtukas">
+            <button class="btn" onclick="spalvos()">Kita Spalva</button>
+        </div>
     </div>
 
     <div class="container" title="Antras">
@@ -47,11 +50,11 @@
     </div>
 
     <div class="container" title="Sestas">
-            <h2>Dynamiskas sarasas</h2>
-            <div class="dynamiskas">
-                <ul id="sarasas"></ul>
+        <h2>Dynamiskas sarasas</h2>
+        <div class="dynamiskas">
+            <ul id="sarasas"></ul>
             <button onclick="pridetiElementa()">Pridėti elementą</button>
-            </div>
+        </div>
     </div>
 
     <div class="container" title="Septintas">
@@ -62,6 +65,48 @@
         </form>
     </div>
 
+    <div class="container" title="Astuntas">
+        <button onclick="pasleptiRodyti()">Paslėpti/Rodyti Tekstą</button>
+        <p id="tekstas">Šis tekstas gali būti paslėptas.</p>
+    </div>
+
+    <div class="container" title="Devintas">
+        <button onclick="padidintiSkaitliuka()">Padidinti skaitliuką</button>
+        <p id="skaitliukas">0</p>
+    </div>
+
+    <div class="container" title="Desimtas">
+        <input type="text" id="tekstoLaukas" placeholder="Įveskite tekstą">
+        <button onclick="skaiciuotiIlgį()">Skaičiuoti ilgį</button>
+        <p id="rezultatas"></p>
+    </div>
+
+    <div class="container" title="Vienuoliktas">
+        <button onclick="pridetiMygtuka()">Pridėti mygtuką</button>
+        <div id="mygtukuKonteineris"></div>
+    </div>
+
+    <div class="container" title="Dvyliktas">
+        <ul id="sarasas">
+            <li>Sąrašo elementas 1 <button onclick="trintiElementa(1)">Trinti</button></li>
+            <li>Sąrašo elementas 2 <button onclick="trintiElementa(2)">Trinti</button></li>
+            <li>Sąrašo elementas 3 <button onclick="trintiElementa(3)">Trinti</button></li>
+        </ul>
+    </div>
+
+    <div class="container" title="Tryliktas">
+        <div class="langas" id="langas1" onclick="pakeistiAktyvuLangą(1)">Langas 1</div>
+        <div class="langas" id="langas2" onclick="pakeistiAktyvuLangą(2)">Langas 2</div>
+        <div class="langas" id="langas3" onclick="pakeistiAktyvuLangą(3)">Langas 3</div>
+    </div>
+
+
+    <div class="container" title="Keturioliktas">
+        <button onclick="keistiPaveiksli()">Keisti paveikslėlį</button>
+        <img id="paveikslelis" src="paveikslas1.jpg" alt="Paveikslėlis 1">
+
+    </div>
     <script src="scripts.js"></script>
 </body>
+
 </html>

@@ -65,23 +65,23 @@
         </form>
     </div>
 
-    <div class="container" title="Astuntas">
+    <div class="container plotis" title="Astuntas">
         <button onclick="pasleptiRodyti()">Paslėpti/Rodyti Tekstą</button>
         <p id="tekstas">Šis tekstas gali būti paslėptas.</p>
     </div>
 
-    <div class="container" title="Devintas">
+    <div class="container plotis" title="Devintas">
         <button onclick="padidintiSkaitliuka()">Padidinti skaitliuką</button>
         <p id="skaitliukas">0</p>
     </div>
 
-    <div class="container" title="Desimtas">
+    <div class="container plotis" title="Desimtas">
         <input type="text" id="tekstoLaukas" placeholder="Įveskite tekstą">
         <button onclick="skaiciuotiIlgį()">Skaičiuoti ilgį</button>
         <p id="rezultatas"></p>
     </div>
 
-    <div class="container" title="Vienuoliktas">
+    <div class="container plotis" title="Vienuoliktas">
         <button onclick="pridetiMygtuka()">Pridėti mygtuką</button>
         <div id="mygtukuKonteineris"></div>
     </div>
@@ -94,18 +94,104 @@
         </ul>
     </div>
 
-    <div class="container" title="Tryliktas">
+    <div class="container plotis" title="Tryliktas">
         <div class="langas" id="langas1" onclick="pakeistiAktyvuLangą(1)">Langas 1</div>
         <div class="langas" id="langas2" onclick="pakeistiAktyvuLangą(2)">Langas 2</div>
         <div class="langas" id="langas3" onclick="pakeistiAktyvuLangą(3)">Langas 3</div>
     </div>
 
 
-    <div class="container" title="Keturioliktas">
+    <div class="container plotis" title="Keturioliktas">
         <button onclick="keistiPaveiksli()">Keisti paveikslėlį</button>
         <img id="paveikslelis" src="paveikslas1.jpg" alt="Paveikslėlis 1">
 
     </div>
+
+
+    <div class="container plotis" title="Penkioliktas">
+    <button onclick="rodytiLaika()">Rodyti Laiką</button>
+    <input type="text" id="laikoLaukas" readonly>
+    </div>
+
+    <div class="container plotis" title="Sesioliktas">
+        <form>
+            <input type="text" id="ivykioLaukas" placeholder="Įveskite kažką...">
+            <button type="button" onclick="pateiktiForma()">Pateikti</button>
+        </form>
+    </div>
+
+    <div class="container plotis" title="Septinioliktas">
+        <label for="svoris">Kūno svoris (kg): </label>
+        <input type="number" id="svoris" step="0.1">
+        <br>
+        <label for="ugis">Ūgis (m): </label>
+        <input type="number" id="ugis" step="0.01">
+        <br>
+        <button onclick="skaiciuotiBMI()">Skaičiuoti BMI</button>
+        <br>
+        <div id="rezultatoDiv"></div>
+    </div>
+
+    <div class="container plots" title="Astuonioliktas">
+        <h1>Kelionės Kainos Skaičiuoklė</h1>
+        <form id="kelionesForma">
+            <label for="atstumas">Kelionės atstumas:</label>
+            <input type="number" id="atstumas" required>
+    
+            <label for="sanaudos">Kuro sąnaudos:</label>
+            <input type="number" id="sanaudos" required>
+    
+            <label for="kuroKaina">Kuro kaina:</label>
+            <input type="number" id="kuroKaina" required>
+    
+            <button type="button" onclick="apskaiciuotiIslaikymoSanaudas()">Apskaičiuoti</button>
+        </form>
+    
+        <h2>Rezultatas:</h2>
+        <p id="rezultatas"></p>
+    </div>
+
+    <div class="container plots" title="Devinioliktas">
+        <h1>Užsakymo Forma</h1>
+        <form id="uzsakymoForma">
+            <label for="pavadinimas">Prekės pavadinimas:</label>
+            <input type="text" id="pavadinimas" required>
+    
+            <label for="kiekis">Prekės kiekis:</label>
+            <input type="number" id="kiekis" required>
+    
+            <label for="kaina">Prekės kaina:</label>
+            <input type="number" id="kaina" required>
+    
+            <button type="button" onclick="pridetiPreke()">Pridėti prekę</button>
+        </form>
+    
+        <h2>Užsakymo sąrašas:</h2>
+        <ul id="uzsakymoSarasas"></ul>
+    </div>
+
+    <div class="container plots" title="Dvidesimtas">
+        <h1>Sąskaitų Skaičiuoklė</h1>
+        <form id="saskaituForma">
+            <label for="saskaitosNumeris">Sąskaitos numeris:</label>
+            <input type="text" id="saskaitosNumeris" required>
+    
+            <label for="suma">Suma:</label>
+            <input type="number" id="suma" required>
+    
+            <label for="terminas">Mokėjimo terminas (dienomis):</label>
+            <input type="number" id="terminas" required>
+    
+            <button type="button" onclick="pridetiSaskaita()">Pridėti sąskaitą</button>
+        </form>
+    
+        <h2>Visų sąskaitų suma:</h2>
+        <p id="visuSaskaituSuma">0 EUR</p>
+    
+        <h2>Sąskaitų sąrašas:</h2>
+        <ul id="saskaituSarasas"></ul>
+    </div>
+
     <script src="scripts.js"></script>
 </body>
 

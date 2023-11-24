@@ -132,15 +132,92 @@ function pakeistiAktyvuLangą(langasNumeris) {
 
 //  ================================================= Keturioliktas
 
-var dabartinisPaveikslelis = 1;
+var dpaveikslelis = 1;
 
 function keistiPaveiksli() {
-    dabartinisPaveikslelis++;
-    if (dabartinisPaveikslelis > 3) {
-        dabartinisPaveikslelis = 1;
+  dpaveikslelis++;
+    if (dpaveikslelis > 3) {
+      dpaveikslelis = 1;
     }
 
     var paveikslelis = document.getElementById("paveikslelis");
-    paveikslelis.src = "paveikslas" + dabartinisPaveikslelis + ".jpg";
-    paveikslelis.alt = "Paveikslėlis " + dabartinisPaveikslelis;
+    paveikslelis.src = "paveikslas" + dpaveikslelis + ".jpg";
+    paveikslelis.alt = "Paveikslėlis " + dpaveikslelis;
+}
+
+// ==================================================== PENKIOLIKTAS
+
+function rodytiLaika() {
+  let laikoLaukas = document.getElementById("laikoLaukas");
+  let dabartinisLaikas = new Date();
+  let valanda = dabartinisLaikas.getHours();
+  let minutes = dabartinisLaikas.getMinutes();
+  let sekundes = dabartinisLaikas.getSeconds();
+  laikoLaukas.value = valanda + ":" + minutes + ":" + sekundes;
+}
+
+// ==================================================== SESIOLIKTAS
+function pateiktiForma() {
+  let ivykioLaukas = document.getElementById("ivykioLaukas");
+  let turinys = ivykioLaukas.value;
+  console.log("Pateikta forma su turiniu: " + turinys);
+}
+// ==================================================== SEPTINIOLIKTAS
+
+function skaiciuotiBMI() {
+  let svoris = document.getElementById("svoris").value;
+  let ugis = document.getElementById("ugis").value;
+  let rezultatoDiv = document.getElementById("rezultatoDiv");
+  
+  if (svoris && ugis) {
+      let bmi = svoris / (ugis * ugis);
+      let rezultatas = "Jūsų BMI yra: " + bmi.toFixed(2);
+      rezultatoDiv.innerHTML = rezultatas;
+  } else {
+      alert("Įveskite kūno svorį ir ūgį!");
+  }
+}
+
+//  ============================================================ Astuonioliktas
+
+function apskaiciuotiIslaikymoSanaudas() {
+  var atstumas = document.getElementById("atstumas").value;
+  var sanaudos = document.getElementById("sanaudos").value;
+  var kuroKaina = document.getElementById("kuroKaina").value;
+
+  var bendrosIslaikymoSanaudos = (atstumas * sanaudos * kuroKaina).toFixed(2);
+
+  document.getElementById("rezultatas").innerHTML = "Bendros kelionės išlaidos: " + bendrosIslaikymoSanaudos + " EUR";
+}
+
+//  =========================================================== devinioliktas
+function pridetiPreke() {
+  var pavadinimas = document.getElementById("pavadinimas").value;
+  var kiekis = document.getElementById("kiekis").value;
+  var kaina = document.getElementById("kaina").value;
+
+  var bendraSuma = (kiekis * kaina).toFixed(2);
+
+  var uzsakymoSarasas = document.getElementById("uzsakymoSarasas");
+  var naujaPreke = document.createElement("li");
+  naujaPreke.textContent = pavadinimas + " - Kiekis: " + kiekis + ", Kaina: " + kaina + " EUR, Bendra suma: " + bendraSuma + " EUR";
+  uzsakymoSarasas.appendChild(naujaPreke);
+}
+
+//  =========================================================== dvidesimtas
+var visoSaskaituSuma = 0;
+
+function pridetiSaskaita() {
+    var saskaitosNumeris = document.getElementById("saskaitosNumeris").value;
+    var suma = parseFloat(document.getElementById("suma").value);
+    var terminas = document.getElementById("terminas").value;
+
+    visoSaskaituSuma += suma;
+
+    var saskaituSarasas = document.getElementById("saskaituSarasas");
+    var naujaSaskaita = document.createElement("li");
+    naujaSaskaita.textContent = "Sąskaita Nr. " + saskaitosNumeris + " - Suma: " + suma.toFixed(2) + " EUR, Terminas: " + terminas + " dienos";
+    saskaituSarasas.appendChild(naujaSaskaita);
+
+    document.getElementById("visuSaskaituSuma").innerHTML = "Visų sąskaitų suma: " + visoSaskaituSuma.toFixed(2) + " EUR";
 }

@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 1920px;
+    background-color: white;
+    text-align: center;
+}
+
+
+
+.container .image .image1 {
+    height: 886px;
+    width: 1920px;
+    object-fit: cover;
+}
+
+.container .images img {
+    width: 312px;
+    height: 459px;
+    object-fit: cover;
+}
+
+.container .aboutme {
+    display: flex;
+    justify-content: center;
+}
+.container .aboutme p {
+    width: 872px;
+    margin-bottom: 64px;
+    margin-top: 45px;
+}
+
+.container .divabout {
+    display: flex;
+  width: 100%;
+    margin-top: 64px;
+}
+
+.container .divabout h2 {
+    color: #373636;
+font-family: Inter;
+font-size: 64px;
+font-style: normal;
+font-weight: 600;
+line-height: 100%; /* 64px */
+letter-spacing: 0.42px;
+}

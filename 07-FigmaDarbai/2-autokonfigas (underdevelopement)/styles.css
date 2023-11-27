@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    max-width: 1920px;
+}
+
+header .background {
+    position: relative;
+}
+
+header .background img {
+    width: 1920px;
+    height: 265px;
+    object-fit: cover;
+}
+
+header #antraste {
+    position: absolute;
+    top: 55px;
+    left: 326px;
+}
+
+header #antraste h1 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 100%;
+    font-variant: all-small-caps;
+}
+
+header #antraste h3 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 48px */
+    font-variant: all-small-caps;
+}
+
+.container {
+    padding: 96px 96px 48px 96px;
+    display: flex;
+}
+
+.container img {
+    width: 709px;
+    height: 398px;
+    object-fit: cover;
+}
+
+.paketas1 {
+    width: 355px;
+    height: 338px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 2px 3px 11.6px 0px rgba(0, 0, 0, 0.10);
+    gap: 8px;
+}
+
+.spalvos {
+    width: 355px;
+    height: 338px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 2px 3px 11.6px 0px rgba(0, 0, 0, 0.10);
+    gap: 8px;
+}
+
+div .tekstai {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+div .tekstai h4 {
+    color: #222;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    /* 24px */
+    font-variant: all-small-caps;
+    margin-bottom: 24px;
+}
+
+div .tekstai ul li {
+    list-style: none;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+div .tekstai a {
+
+    text-decoration: none;
+    color: #222;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+    font-variant: all-small-caps;
+    border-radius: 8px;
+    border: 2px solid #189AF8;
+    display: flex;
+    width: 258px;
+    padding: 16px;
+    text-align: left;
+    justify-content: flex-start;
+    background: linear-gradient(0deg, rgba(24, 154, 248, 0.05) 0%, rgba(24, 154, 248, 0.05) 100%), #FFF;
+}
+
+div .tekstai ul li img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+div .tekstai ul li p {
+    color: #999;
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 100%; /* 18px */
+font-variant: all-small-caps;
+}

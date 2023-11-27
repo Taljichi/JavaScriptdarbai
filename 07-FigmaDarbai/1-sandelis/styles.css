@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    min-height: 100dvh;
+    align-items: center;
+    margin: 200px auto;
+}
+
+#header {
+    margin-bottom: 70px;
+}
+
+#header ul li {
+    list-style: none;
+    text-align: center;
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+#header ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.background img {
+    width: 648px;
+    height: 383px;
+}
+
+.tables {
+    display: flex;
+}

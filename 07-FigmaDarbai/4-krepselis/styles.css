@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E5D4FB;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 100px auto;
+}
+
+.visas {
+    padding: 48px;
+    background: #FFF;
+}
+
+.aprasas {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aprasas .produktas h4 {
+    color: #757575;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.aprasas ul {
+    margin: 0;
+    padding: 0;
+}
+
+.aprasas ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    margin-left: 109px;
+}
+
+.aprasas ul li p {
+    color: #757575;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+/* ======================== SIM ===================================== */
+
+
+.krepselis .prekes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.krepselis .prekes ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.krepselis .prekes ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    margin-left: 66px;
+}
+
+.krepselis .prekes .sim {
+    display: flex;
+    align-items: center;
+}
+
+.krepselis .prekes .sim img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.krepselis .prekes .simkaina {
+
+}
+
+.krepselis .prekes .simkaina .simkiekis .kiekis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+}
+
+.krepselis .prekes .simkaina .simkiekis .kiekis .minus {
+    width: 12px;
+    height: 12px;
+    padding: 13px;
+    border-radius: 10px 0px 0px 10px;
+    background: #EBEBEB;
+    cursor: pointer;
+}
+
+.krepselis .prekes .simkaina .simkiekis .kiekis .plus {
+    width: 12px;
+    height: 12px;
+    padding: 13px;
+    border-radius: 0px 10px 10px 0px;
+    background: #EBEBEB;
+    cursor: pointer;
+}
+
+.krepselis .prekes .simkaina .simkiekis .kiekis p {
+    border: 0px solid #000;
+    background: #F3F3F3;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    color: #252525;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    width: 74px;
+    justify-content: center;
+}
+
+/*  ======================= TELEFONAS ============================== */
+
+
+.krepselis .prekes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.krepselis .prekes ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.krepselis .prekes .telefonaskaina ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    margin-left: 66px;
+}
+
+.krepselis .prekes .telefonas {
+    display: flex;
+    align-items: center;
+}
+
+.krepselis .prekes .telefonas img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.krepselis .prekes .telefonaskaina {
+
+}
+
+.krepselis .prekes .telefonaskaina .telefonaskiekis .kiekis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+}
+
+.krepselis .prekes .telefonaskaina .telefonaskiekis .kiekis .minus {
+    width: 12px;
+    height: 12px;
+    padding: 13px;
+    border-radius: 10px 0px 0px 10px;
+    background: #EBEBEB;
+    cursor: pointer;
+}
+
+.krepselis .prekes .telefonaskaina .telefonaskiekis .kiekis .plus {
+    width: 12px;
+    height: 12px;
+    padding: 13px;
+    border-radius: 0px 10px 10px 0px;
+    background: #EBEBEB;
+    cursor: pointer;
+}
+
+.krepselis .prekes .telefonaskaina .telefonaskiekis .kiekis p {
+    border: 0px solid #000;
+    background: #F3F3F3;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    color: #252525;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    width: 74px;
+    justify-content: center;
+}
+
+/*  ======================= DISK ============================== */
+
+
+.krepselis .prekes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.krepselis .prekes ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.krepselis .prekes .disk ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    margin-left: 66px;
+}
+
+.krepselis .prekes .disk {
+    display: flex;
+    align-items: center;
+}
+
+.krepselis .prekes .disk img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.krepselis .prekes .diskkaina {
+
+}
+
+.krepselis .prekes .diskkaina .diskkiekis .kiekis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+}
+
+.krepselis .prekes .diskkaina .diskkiekis .kiekis .minus {
+    width: 12px;
+    height: 12px;
+    padding: 13px;
+    border-radius: 10px 0px 0px 10px;
+    background: #EBEBEB;
+    cursor: pointer;
+}
+
+.krepselis .prekes .diskkaina .diskkiekis .kiekis .plus {
+    width: 12px;
+    height: 12px;
+    padding: 13px;
+    border-radius: 0px 10px 10px 0px;
+    background: #EBEBEB;
+    cursor: pointer;
+}
+
+.krepselis .prekes .diskkaina .diskkiekis .kiekis p {
+    border: 0px solid #000;
+    background: #F3F3F3;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    color: #252525;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    width: 74px;
+    justify-content: center;
+}
+
+/* ========================================================== */
+
+.apskaiciavimas {
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 35px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.02);
+}

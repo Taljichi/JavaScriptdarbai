@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prekiu krepselis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Prekių krepšelis</h1>
+        <div class="visas">
+            <div class="aprasas">
+                <div class="produktas">
+                    <h4>Produktas</h4>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <p>Vieneto kaina</p>
+                        </li>
+                        <li>
+                            <p>Kiekis</p>
+                        </li>
+                        <li>
+                            <p>Bendra kaina</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="krepselis">
+                <div class="prekes simkortele">
+                    <div class="sim">
+                        <img src="./sim.png" alt="">
+                        <h3>Sim kortelė</h3>
+                    </div>
+                    <div class="simkaina">
+                        <ul>
+                            <li class="sim1kaina">2.00 $</li>
+                            <li class="simkiekis">
+                                <div class="kiekis">
+                                    <img class="minus" src="./minus.svg" alt="">
+                                    <p class="skaicius">1</p>
+                                    <img class="plus" src="./plus.svg" alt="">
+                                </div>
+                            </li>
+                            <li class="simbkaina">2.00 $ <img class="trash" src="./trash.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="prekes mobilusis">
+                    <div class="telefonas">
+                        <img src="./telefonas.png" alt="">
+                        <h3>Telefonas</h3>
+                    </div>
+                    <div class="telefonaskaina">
+                        <ul>
+                            <li class="telefonas1kaina">1200.00 $</li>
+                            <li class="telefonaskiekis">
+                                <div class="kiekis">
+                                    <img class="minus1" src="./minus.svg" alt="">
+                                    <p class="skaicius1">1</p>
+                                    <img class="plus1" src="./plus.svg" alt="">
+                                </div>
+                            </li>
+                            <li class="telefonasbkaina">1200.00 $ <img class="trash1" src="./trash.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="prekes sdkortele">
+                    <div class="disk">
+                        <img src="./disk.jpg" alt="">
+                        <h3>SD kortelė (128 GB)</h3>
+                    </div>
+                    <div class="diskkaina">
+                        <ul>
+                            <li class="disk1kaina">35.00 $</li>
+                            <li class="diskkiekis">
+                                <div class="kiekis">
+                                    <img class="minus2" src="./minus.svg" alt="">
+                                    <p class="skaicius2">2</p>
+                                    <img class="plus2" src="./plus.svg" alt="">
+                                </div>
+                            </li>
+                            <li class="diskbkaina">70.00 $ <img class="trash2" src="./trash.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uzsakymas">
+                    <div class="atnaujinti">
+                        <button id="atnaujint">Atnaujinti</button>
+                    </div>
+                    <div class="apskaiciavimas">
+                        <h2>Užsakymo suma:</h2>
+                        <div id="suma">
+                            <p>0 $</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

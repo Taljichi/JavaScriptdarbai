@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #010000;
+}
+
+img {
+    width: 950px;
+    height: 1080px;
+    object-fit: cover;
+}
+
+.container {
+    margin: 20px;
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+}
+
+#pinigai {
+    margin: 178px 0 57px 20px;
+}
+
+.group {
+    display: flex;
+}
+
+/* ==================DROP DOWN TURIMA SUMA ========== */
+h4 {
+    color: #FFF;
+    font-family: PT Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    /* 133.333% */
+    margin-left: 36px;
+}
+
+.ivestis {
+    color: #949494;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    align-self: stretch;
+    margin-left: 36px;
+}
+
+.inputs {
+    display: flex;
+    margin-left: 36px;
+
+}
+
+#suma {
+    display: flex;
+    height: 56px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: #191919;
+    padding: 16px;
+    color: #D4D4D4;
+    font-family: Inter;
+    font-size: 18px;
+
+    font-weight: 400;
+    line-height: 28px;
+}
+
+#selektorius {
+    margin-left: 16px;
+    display: flex;
+    width: 145px;
+    padding-top: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    display: flex;
+    height: 56px;
+    padding: 16px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: #191919;
+    color: #D4D4D4;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* =========================================================== */
+
+
+
+
+#valiuta {
+    margin-left: 36px;
+    display: flex;
+    width: 375px;
+    padding: 0px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    display: flex;
+    height: 56px;
+    padding: 16px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    color: #D4D4D4;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 155.556% */
+    border-radius: 8px;
+    background: #191919;
+}
+
+#konvertuoti {
+    display: flex;
+    width: 256px;
+    padding: 16px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #FFF;
+    margin-left: 36px;
+    height: 53px;
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    /* 116.667% */
+}
+
+.norimaval {
+    margin-top: 32px;
+}
+
+#konvertuoti:hover {
+    background: #F8918B;
+}
+
+#pradzia {
+    display: none;
+    width: 256px;
+    height: 53px;
+    padding: 16px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 3px solid #FEF6F5;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    /* 116.667% */
+    background: #010000;
+    margin-left: 8px;
+}
+
+.mygtukai {
+    display: flex;
+    align-items: center;
+}
+
+#rezultatai {
+    margin-left: 36px;
+    color: white;
+}
+
+#rezultatai h3 {
+    color: #FFF;
+    font-family: PT Sans Caption;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 48px */
+}
+
+#rezultatai div {
+    display: flex;
+    color: #FFF;
+    font-family: PT Sans Caption;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 21.6px */
+}
+
+#rezultatai div p {
+    color: #FFF;
+    font-family: PT Sans Caption;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-left: 4px;
+}

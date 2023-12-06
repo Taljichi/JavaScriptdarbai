@@ -36,7 +36,6 @@ h4 {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
-    /* 133.333% */
     margin-left: 36px;
 }
 
@@ -46,7 +45,6 @@ h4 {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    /* 142.857% */
     align-self: stretch;
     margin-left: 36px;
 }
@@ -76,17 +74,13 @@ h4 {
 
 #selektorius {
     margin-left: 16px;
-    display: flex;
     width: 145px;
-    padding-top: 4px;
     flex-direction: column;
-    align-items: flex-start;
     gap: 8px;
     display: flex;
     height: 56px;
     padding: 16px;
     align-items: center;
-    gap: 16px;
     align-self: stretch;
     border-radius: 8px;
     background: #191919;
@@ -119,7 +113,6 @@ h4 {
     color: #D4D4D4;
     font-family: Inter;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 28px;
     /* 155.556% */
@@ -141,7 +134,6 @@ h4 {
     color: #000;
     font-family: Inter;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 21px;
     /* 116.667% */
@@ -168,10 +160,8 @@ h4 {
     color: #FFF;
     font-family: Inter;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 21px;
-    /* 116.667% */
     background: #010000;
     margin-left: 8px;
 }
@@ -190,7 +180,6 @@ h4 {
     color: #FFF;
     font-family: PT Sans Caption;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     line-height: 120%;
     /* 48px */
@@ -201,7 +190,6 @@ h4 {
     color: #FFF;
     font-family: PT Sans Caption;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 120%;
     /* 21.6px */
@@ -211,7 +199,6 @@ h4 {
     color: #FFF;
     font-family: PT Sans Caption;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 120%;
     margin-left: 4px;

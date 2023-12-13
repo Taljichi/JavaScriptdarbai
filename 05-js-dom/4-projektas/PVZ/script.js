@@ -16,45 +16,70 @@ class Calculator {
   }
 
   appendNumber(number) {
-    if (number === '.' && this.currentOperand.includes('.')) return
-    this.currentOperand = this.currentOperand.toString() + number.toString()
+    if (number === '.' && this.currentOperand.includes('.')) return;
+    if (number === '.' && this.currentOperand === '') {
+      this.currentOperand = '0.';
+    } else {
+      if (number === '.' && Number.isInteger(parseFloat(this.currentOperand))) {
+        this.currentOperand += '.';
+      } else {
+        if (this.currentOperand.length >= 8) return;
+        this.currentOperand = this.currentOperand.toString() + number.toString();
+      }
+    }
   }
+  toggleSign() {
+    this.currentOperand = (parseFloat(this.currentOperand) * -1).toString();
+  };
+
 
   chooseOperation(operation) {
-    if (this.currentOperand === '') return
-    if (this.previousOperand !== '') {
-      this.compute()
+    if (this.currentOperand === '' && this.previousOperand !== '') {
+      this.operation = operation;
+      this.updateDisplay();
+      return;
     }
-    this.operation = operation
-    this.previousOperand = this.currentOperand
-    this.currentOperand = ''
+    if (this.currentOperand === '') return;
+    if (this.previousOperand !== '' && this.currentOperand !== '') {
+      this.compute();
+    }
+    this.operation = operation;
+    this.previousOperand = this.currentOperand;
+    this.currentOperand = '';
+    this.updateDisplay();
   }
 
+
+
+
   compute() {
-    let computation
-    const prev = parseFloat(this.previousOperand)
-    const current = parseFloat(this.currentOperand)
-    if (isNaN(prev) || isNaN(current)) return
+    let computation;
+    const prev = parseFloat(this.previousOperand);
+    const current = parseFloat(this.currentOperand);
+
+    if (isNaN(prev) || isNaN(current)) return;
+
     switch (this.operation) {
       case '+':
-        computation = prev + current
-        break
+        computation = prev + current;
+        break;
       case '-':
-        computation = prev - current
-        break
+        computation = prev - current;
+        break;
       case '*':
-        computation = prev * current
-        break
+        computation = prev * current;
+        break;
       case '÷':
-        computation = prev / current
-        break
+        computation = prev / current;
+        break;
       default:
-        return
+        return;
     }
-    this.currentOperand = computation
-    this.operation = undefined
-    this.previousOperand = ''
+    this.currentOperand = computation.toFixed(10);
+    this.operation = undefined;
+    this.previousOperand = '';
   }
+
 
   getDisplayNumber(number) {
     const stringNumber = number.toString()
@@ -73,16 +98,22 @@ class Calculator {
     }
   }
 
+
   updateDisplay() {
     this.currentOperandTextElement.innerText =
-      this.getDisplayNumber(this.currentOperand)
+      this.getDisplayNumber(this.currentOperand);
     if (this.operation != null) {
-      this.previousOperandTextElement.innerText =
-        `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
+      if (this.previousOperand !== '') {
+        this.previousOperandTextElement.innerText =
+          `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`;
+      } else {
+        this.previousOperandTextElement.innerText = this.operation;
+      }
     } else {
-      this.previousOperandTextElement.innerText = ''
+      this.previousOperandTextElement.innerText = '';
     }
   }
+
 }
 
 
@@ -161,6 +192,13 @@ document.addEventListener('keydown', function (event) {
 
 });
 
+const toggleSignButton = document.querySelector('[data-toggle-sign]');
+
+toggleSignButton.addEventListener('click', button => {
+  calculator.toggleSign();
+  calculator.updateDisplay();
+});
+
 
 
 // clear() - Išvalo dabartinį ir ankstesnį skaičius bei operacijas.
@@ -169,7 +207,8 @@ document.addEventListener('keydown', function (event) {
 
 // appendNumber(number) - Prideda skaitmenį prie dabartinio skaičiaus. Taip pat atlieka patikrą, ar nėra bandymo pridėti kelis taškus.
 
-// chooseOperation(operation) - Pasirenka operaciją (pvz., sudėtį, atimtį, daugybą ar dalybą). Jei paskutinis simbolis yra operacija, tai pakeičia jį naujai pasirinkta operacija. Pridėtas patikrinimas, kad nebūtų galima įvesti dviejų iš eilės esančių veiksmų.
+// chooseOperation(operation) - Pasirenka operaciją (pvz., sudėtį, atimtį, daugybą ar dalybą). Jei paskutinis simbolis yra operacija, tai pakeičia jį naujai pasirinkta operacija. 
+// Pridėtas patikrinimas, kad nebūtų galima įvesti dviejų iš eilės esančių veiksmų.
 
 // compute() - Atlieka skaičiavimus pagal esamus skaičius ir operaciją.
 

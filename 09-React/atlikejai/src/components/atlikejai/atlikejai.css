@@ -1,0 +1,32 @@
+.artists-section {
+    background: #f8f8f8;
+}
+
+.artists-section .content-part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.artists-section .content-part .artist-block {
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 28px 44.5px;
+}
+
+.artists-section .content-part .artist-block .image img {
+    width: 238px;
+    height: 238px;
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+.artists-section .container .title-part p {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    width: 735px;
+}

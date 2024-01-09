@@ -1,0 +1,76 @@
+.ticket-section .container .tickets {
+    display: flex;
+}
+
+.ticket-section .ticket-block {
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
+    width: 447px;
+    height: 375px;
+    text-align: center;
+}
+
+.ticket-section .tickets {
+    gap: 37.5px;
+}
+
+.ticket-section .tickets .button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 15px 66px;
+    display: inline-block;
+    color: white;
+    background: #EB5757;
+}
+
+.ticket-section .ticket-block p {
+    width: 300px;
+    padding-left: 50px;
+}
+
+.ticket-section .ticket-block h3 {
+    color: #222;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.ticket-section .ticket-block ul {
+list-style-type: none;
+}
+
+.ticket-section .ticket-block .kaina1 {
+    color: #222;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.ticket-section .ticket-block .kaina2 {
+    color: #EB5757;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.ticket-section .ticket-block .black-row {
+    background: #2222221c;
+    height: 1px;
+    margin: 19px auto;
+}
+
+.ticket-section .tickets .button {
+    padding-top: 23px;
+}

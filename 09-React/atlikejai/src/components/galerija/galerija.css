@@ -1,0 +1,21 @@
+.gallery-section {
+    background: rgba(235, 87, 87, 0.10);
+}
+
+.gallery-section .container .title-part p {
+    width: 735px;
+}
+
+.gallery-section .content-part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-section .content-part img {
+    height: 248px;
+    width: 248px;
+    object-fit: cover;
+    padding: 12px;
+    box-sizing: border-box;
+}

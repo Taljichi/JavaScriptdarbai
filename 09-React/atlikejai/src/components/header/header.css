@@ -1,0 +1,46 @@
+header {
+    height: calc(100vh - 120px);
+    background: url('img/header.jpg') center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 80px;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+header p {
+    font-size: 40px;
+    color: white;
+    margin: 16px 0 43px;
+}
+
+header .buttons a {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 15px 66px;
+    display: inline-block;
+}
+
+header .buttons .primary-button {
+    color: white;
+    background: #EB5757;
+    margin-right: 21px;
+}
+
+header .buttons .secondary-button {
+    color: #EB5757;
+    background-color: white;
+}
+
+header .content {
+    width: 100%;
+    max-width: 1000px;
+}

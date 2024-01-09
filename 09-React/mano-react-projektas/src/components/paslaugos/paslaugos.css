@@ -1,0 +1,8 @@
+.paslaugos {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(70, 43, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

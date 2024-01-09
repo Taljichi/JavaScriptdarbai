@@ -1,0 +1,50 @@
+.rasti-section {
+    background: rgba(235, 87, 87, 0.10);
+    justify-content: center;
+}
+
+.rasti-section .map img {
+    width: 1175px;
+    height: 443px;
+    object-fit: cover;
+}
+
+.rasti-section .map {
+    margin-left: 100px;
+}
+
+.pabaiga {
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 47px 72px;
+    box-sizing: border-box;
+}
+
+.pabaiga h1 {
+    color: #222;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+.pabaiga ul {
+    padding: 0;
+    margin: 0;
+
+}
+
+.pabaiga ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 63px;
+}
+
+.pabaiga a {
+    text-decoration: none;
+    color: #222222;
+}

@@ -1,0 +1,8 @@
+.apiemus {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(124, 100, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
